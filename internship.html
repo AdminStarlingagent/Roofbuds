@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3AB5FF">
+<meta name="color-scheme" content="light">
+<meta name="description" content="RoofBuds Leadership & Sales Internship — a 5-week summer program for high school students in Spring, TX. Confidence, sales, leadership, entrepreneurship. June 22 – July 23, 2026.">
+<title>RoofBuds Summer Internship 2026 — Level Up Your Summer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D1B2E; --ink:#0A1523; --sky:#3AB5FF; --sun:#FFC53D;
+  --orange:#FF6B2C; --paper:#F2F8FF; --skylight:#C7E6FF; --mint:#2BC48A; --red:#FF5A5A; --white:#fff;
+  color-scheme:light;
+}
+*{box-sizing:border-box; margin:0; padding:0}
+html{scroll-behavior:smooth; background:#C7E6FF}
+body{font-family:'Space Grotesk',system-ui,sans-serif; background:#C7E6FF !important; color:var(--navy); line-height:1.55; -webkit-font-smoothing:antialiased}
+::selection{background:var(--sun); color:var(--navy)}
+img,svg{display:block; max-width:100%}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:'Archivo Black',sans-serif; line-height:1.08; letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,7vw,4.4rem)}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem); margin-bottom:14px}
+h3{font-size:1.15rem}
+.wrap{max-width:1100px; margin:0 auto; padding:0 20px}
+section{padding:76px 0}
+.center{text-align:center}
+.sub{font-size:1.1rem; max-width:640px; opacity:.95}
+.eyebrow{display:inline-block; background:var(--sun); border:3px solid var(--navy); border-radius:999px; padding:7px 16px; font-weight:700; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; box-shadow:3px 3px 0 var(--navy); margin-bottom:18px}
+:focus-visible{outline:3px solid var(--orange); outline-offset:3px; border-radius:6px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; border:3px solid var(--navy); border-radius:14px; padding:14px 24px; background:var(--sun); color:var(--navy); text-decoration:none; box-shadow:5px 5px 0 var(--navy); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease}
+.btn:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--navy)}
+.btn:active{transform:translate(5px,5px); box-shadow:0 0 0 var(--navy)}
+.btn.orange{background:var(--orange); color:#fff}
+.btn.sky{background:var(--sky)}
+.btn.ghost{background:#fff}
+.btn.sm{padding:10px 16px; font-size:.92rem; border-radius:11px}
+.btn:disabled{opacity:.45; cursor:not-allowed; transform:none}
+
+/* ---------- cards & stickers ---------- */
+.card{background:#fff; border:3px solid var(--navy); border-radius:18px; box-shadow:7px 7px 0 rgba(13,27,46,.9); padding:24px}
+.chip{display:inline-block; background:#fff; border:2.5px solid var(--navy); border-radius:999px; padding:5px 13px; font-weight:700; font-size:.85rem; box-shadow:2px 2px 0 var(--navy); margin:4px 4px 0 0}
+
+/* ---------- nav ---------- */
+nav{position:sticky; top:0; z-index:50; background:var(--navy); color:#fff; border-bottom:3px solid var(--ink)}
+.navin{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 20px; max-width:1100px; margin:0 auto}
+.logo{font-family:'Archivo Black',sans-serif; font-size:1.15rem; text-decoration:none; display:flex; align-items:center; gap:8px}
+.logo .tag{font-family:'Space Grotesk',sans-serif; font-size:.65rem; background:var(--orange); color:#fff; border:2px solid var(--navy); border-radius:6px; padding:2px 7px; letter-spacing:.08em}
+.navlinks{display:flex; gap:20px; font-weight:700; font-size:.95rem}
+.navlinks a{text-decoration:none; opacity:.85}
+.navlinks a:hover{opacity:1; color:var(--orange)}
+
+.livebar{display:block; background:var(--orange); color:#fff; text-align:center; font-weight:700; font-size:.95rem; padding:11px 16px; text-decoration:none; border-bottom:3px solid var(--navy)}
+.livebar:hover{background:#E85A1E}
+/* ---------- hero ---------- */
+.hero{padding:64px 0 0; overflow:hidden; background:var(--sky)}
+.herogrid{display:grid; grid-template-columns:1.15fr .85fr; gap:36px; align-items:center}
+.hero h1{color:#fff; text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero h1 .hl{color:var(--orange); text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero .sub{margin:18px 0 26px}
+.ctarow{display:flex; gap:14px; flex-wrap:wrap}
+.datechips{margin-top:26px}
+.board{position:relative; min-height:360px}
+.stick{position:absolute; background:#fff; border:3px solid var(--navy); border-radius:16px; padding:14px 18px; font-weight:700; box-shadow:6px 6px 0 var(--navy); text-align:center; animation:float 5s ease-in-out infinite}
+.stick .big{font-size:2.1rem; display:block; margin-bottom:2px}
+.s1{top:4%; left:6%; transform:rotate(-7deg); background:var(--sun)}
+.s2{top:2%; right:2%; transform:rotate(5deg)}
+.s3{top:42%; left:0%; transform:rotate(4deg); background:var(--sun); animation-delay:.8s}
+.s4{top:44%; right:8%; transform:rotate(-4deg); animation-delay:1.4s}
+.s5{bottom:0%; left:28%; transform:rotate(-2deg); background:var(--orange); color:#fff; animation-delay:2s}
+@keyframes float{0%,100%{margin-top:0}50%{margin-top:-9px}}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--navy); color:var(--sun); border-top:3px solid var(--navy); border-bottom:3px solid var(--navy); overflow:hidden; padding:12px 0; margin-top:60px}
+.ticker-in{display:flex; gap:0; white-space:nowrap; font-family:'Archivo Black',sans-serif; font-size:1rem; animation:slide 26s linear infinite}
+.ticker-in span{padding-right:34px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- weekly rhythm ---------- */
+.rgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:34px}
+.rcard .day{display:inline-block; background:var(--navy); color:var(--sun); border-radius:8px; padding:4px 12px; font-family:'Archivo Black',sans-serif; font-size:.8rem; letter-spacing:.05em; margin-bottom:12px}
+.rcard .emo{font-size:2rem; margin-bottom:8px}
+
+/* ---------- journey ---------- */
+.xpwrap{max-width:520px; margin:26px auto 30px}
+.xplabel{display:flex; justify-content:space-between; font-weight:700; font-size:.9rem; margin-bottom:6px}
+.xpbar{height:20px; background:#fff; border:3px solid var(--navy); border-radius:999px; overflow:hidden}
+.xpfill{height:100%; width:0%; background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 12px,#25a877 12px,#25a877 24px); transition:width .4s ease}
+.wtabs{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:26px}
+.wtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:.95rem; background:#fff; border:3px solid var(--navy); border-radius:12px; padding:10px 16px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.wtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.wtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.wpanel{display:grid; grid-template-columns:.9fr 1.1fr; gap:26px; align-items:start}
+.wpanel .hero-emo{font-size:4rem; line-height:1}
+.wpanel .tagline{font-size:1.05rem; font-weight:500; opacity:.85; margin-top:8px}
+.dayrow{display:flex; gap:14px; align-items:flex-start; padding:13px 0; border-bottom:2px dashed rgba(13,27,46,.25)}
+.dayrow:last-child{border-bottom:none}
+.dayrow .d{flex:0 0 52px; background:var(--sky); border:2.5px solid var(--navy); border-radius:9px; text-align:center; font-family:'Archivo Black',sans-serif; font-size:.78rem; padding:5px 0}
+
+/* ---------- skills ---------- */
+.skillgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:16px; margin-top:34px}
+.skill{background:#fff; border:3px solid var(--navy); border-radius:16px; box-shadow:5px 5px 0 var(--navy); padding:18px 12px; text-align:center; font-weight:700; transition:transform .12s}
+.skill:hover{transform:rotate(-2deg) scale(1.03)}
+.skill .emo{font-size:2rem; display:block; margin-bottom:6px}
+
+/* ---------- team code ---------- */
+.codelist{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:30px}
+.codeitem{display:flex; align-items:center; gap:14px; background:#fff; border:3px solid var(--navy); border-radius:14px; padding:15px 18px; font-weight:700; cursor:pointer; box-shadow:4px 4px 0 var(--navy)}
+.codeitem input{width:22px; height:22px; accent-color:var(--orange); cursor:pointer; flex-shrink:0}
+#codeDone{display:none; margin:26px auto 0; max-width:560px; background:var(--navy); color:var(--sun); text-align:center; font-family:'Archivo Black',sans-serif; font-size:1.2rem; border-radius:16px; padding:20px; border:3px solid var(--navy); box-shadow:6px 6px 0 rgba(13,27,46,.4)}
+
+/* ---------- level path ---------- */
+.path{display:flex; gap:14px; align-items:stretch; margin-top:36px; flex-wrap:wrap}
+.step{flex:1; min-width:190px; position:relative}
+.step .lv{position:absolute; top:-14px; left:16px; background:var(--orange); color:#fff; border:2.5px solid var(--navy); border-radius:8px; font-family:'Archivo Black',sans-serif; font-size:.75rem; padding:3px 9px}
+.step .emo{font-size:1.9rem; margin-bottom:6px}
+.step p{font-size:.92rem; opacity:.85; font-weight:500}
+
+
+/* ---------- game zone ---------- */
+#games .eyebrow{background:var(--orange); color:#fff}
+.gtabs{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin:34px 0 30px}
+.gtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:14px; padding:13px 20px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.gtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.gtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.gpanel{display:none; max-width:760px; margin:0 auto}
+.gpanel.on{display:block}
+.gcard{background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:20px; box-shadow:8px 8px 0 rgba(13,27,46,.9); padding:28px}
+.gtitle{font-family:'Archivo Black',sans-serif; font-size:1.3rem; margin-bottom:4px}
+.gmeta{font-size:.9rem; opacity:.75; margin-bottom:18px; font-weight:500}
+.opt{display:block; width:100%; text-align:left; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:14px 16px; margin-bottom:12px; cursor:pointer; transition:transform .1s; box-shadow:3px 3px 0 var(--navy)}
+.opt:hover{transform:translate(1px,1px); box-shadow:2px 2px 0 var(--navy)}
+.opt.good{background:var(--mint); color:#fff; border-color:#0d7a52}
+.opt.bad{background:var(--red); color:#fff; border-color:#a12626}
+.opt.dim{opacity:.45}
+.opt:disabled{cursor:default; transform:none}
+.why{background:var(--paper); border:2.5px dashed var(--navy); border-radius:12px; padding:14px 16px; font-weight:500; margin:6px 0 16px}
+.prog{font-family:'Archivo Black',sans-serif; font-size:.85rem; background:var(--sky); display:inline-block; border:2.5px solid var(--navy); border-radius:8px; padding:4px 12px; margin-bottom:16px}
+.bubble{background:var(--paper); border:3px solid var(--navy); border-radius:18px 18px 18px 4px; padding:16px 18px; font-size:1.1rem; font-weight:700; margin-bottom:18px; position:relative}
+.bubble::before{content:"🚪🗣️"; display:block; font-size:1.3rem; margin-bottom:6px}
+.meters{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:20px}
+.meter{flex:1; min-width:200px; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:12px 14px}
+.meter .mlabel{font-size:.8rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; opacity:.7}
+.meter .mval{font-family:'Archivo Black',sans-serif; font-size:1.4rem}
+.repbar{height:12px; background:#fff; border:2px solid var(--navy); border-radius:99px; overflow:hidden; margin-top:6px}
+.repfill{height:100%; background:var(--mint); width:50%; transition:width .35s, background .35s}
+.bignum{font-family:'Archivo Black',sans-serif; font-size:4rem; text-align:center; margin:10px 0}
+.timerbar{height:16px; background:var(--paper); border:3px solid var(--navy); border-radius:99px; overflow:hidden; margin:8px 0 18px}
+.timerfill{height:100%; width:100%; background:var(--orange); transition:width 1s linear}
+.result{text-align:center; padding:10px 0}
+.result .remo{font-size:3.4rem}
+.result .rtitle{font-family:'Archivo Black',sans-serif; font-size:1.5rem; margin:8px 0 4px}
+.result p{font-weight:500; opacity:.85; max-width:480px; margin:0 auto 18px}
+.gfoot{text-align:center; margin-top:26px; font-size:.9rem; opacity:.85}
+
+/* ---------- parents ---------- */
+#parents .card{max-width:780px; margin:30px auto 0}
+#parents .founders{display:flex; gap:14px; align-items:center; margin-top:20px; padding-top:20px; border-top:2px dashed rgba(13,27,46,.25); font-weight:700}
+#parents .founders .emo{font-size:2rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink); color:#cfe3ff; padding:44px 20px; text-align:center; font-size:.95rem}
+footer a{color:var(--sun); font-weight:700}
+footer .flogo{font-family:'Archivo Black',sans-serif; color:#fff; font-size:1.2rem; margin-bottom:10px}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .herogrid{grid-template-columns:1fr}
+  .board{min-height:320px; margin-top:10px}
+  .wpanel{grid-template-columns:1fr}
+  .rgrid{grid-template-columns:1fr}
+  .codelist{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .navlinks{display:none}
+  section{padding:56px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker-in{animation:none}
+  .stick{animation:none}
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body id="top">
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="navin">
+    <a class="logo" href="#top">🏠 RoofBuds <span class="tag">INTERNSHIP</span></a>
+    <div class="navlinks">
+      <a href="#journey">The Plan</a>
+      <a href="#skills">Skills</a>
+      <a href="#games">Games</a>
+      <a href="#parents">Parents</a>
+    </div>
+    <a class="btn sm orange" href="sms:2817664227">Text us to apply</a>
+  </div>
+</nav>
+<a class="livebar" href="week4.html">🔴 LIVE THIS WEEK &nbsp;·&nbsp; Week 4: Leadership &amp; Professionalism — schedule, playbook &amp; 3 new games →</a>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <span class="eyebrow">☀️ Summer 2026 · Spring, TX</span>
+      <h1>Level up<br>your <span class="hl">summer.</span></h1>
+      <p class="sub">Five weeks. Three days a week. Real-world training in confidence, sales, leadership, and money — from the crew at RoofBuds. No experience needed. Bring the energy.</p>
+      <div class="ctarow">
+        <a class="btn orange" href="#journey">See the 5-week plan</a>
+        <a class="btn sky" href="#games">🎮 Play the games</a>
+      </div>
+      <div class="datechips">
+        <span class="chip">📅 June 22 – July 23, 2026</span>
+        <span class="chip">🗓️ Tue · Wed · Thu</span>
+        <span class="chip">🎓 High school students</span>
+      </div>
+    </div>
+    <div class="board" aria-hidden="true">
+      <div class="stick s1"><span class="big">🎤</span>Public speaking</div>
+      <div class="stick s2"><span class="big">🛡️</span>Rejection-proof</div>
+      <div class="stick s3"><span class="big">💰</span>Money smarts</div>
+      <div class="stick s4"><span class="big">🏆</span>Leadership</div>
+      <div class="stick s5"><span class="big">🤝</span>Real sales reps</div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-in">
+      <span>CONFIDENCE ✦ SALES ✦ LEADERSHIP ✦ TEAMWORK ✦ MONEY SMARTS ✦ PUBLIC SPEAKING ✦ RESILIENCE ✦ ENTREPRENEURSHIP ✦&nbsp;</span>
+      <span>CONFIDENCE ✦ SALES ✦ LEADERSHIP ✦ TEAMWORK ✦ MONEY SMARTS ✦ PUBLIC SPEAKING ✦ RESILIENCE ✦ ENTREPRENEURSHIP ✦&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ WEEKLY RHYTHM ============ -->
+<section id="rhythm">
+  <div class="wrap center">
+    <span class="eyebrow">The weekly rhythm</span>
+    <h2>Your week, decoded.</h2>
+    <p class="sub" style="margin:0 auto">Every week runs on the same three-day beat — classroom energy, field action, and Thursday glory.</p>
+    <div class="rgrid">
+      <div class="card rcard">
+        <div class="emo">🧠</div>
+        <span class="day">TUESDAY</span>
+        <h3>Level-Up Lab</h3>
+        <p>Leadership & professional development. Workshops, drills, and real talk on the skill of the week.</p>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🥾</div>
+        <span class="day">WEDNESDAY</span>
+        <h3>Field Day</h3>
+        <p>Field training & neighborhood outreach. Take what you learned Tuesday and run it in the real world.</p>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🏅</div>
+        <span class="day">THURSDAY</span>
+        <h3>Game Day</h3>
+        <p>Outreach, competitions & recognition. Team challenges, shout-outs, and bragging rights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5-WEEK JOURNEY ============ -->
+<section id="journey">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">The main quest</span>
+      <h2>The 5-week journey.</h2>
+      <p class="sub" style="margin:0 auto">Tap through every week to unlock the full map.</p>
+    </div>
+    <div class="xpwrap">
+      <div class="xplabel"><span>🗺️ Explorer XP</span><span id="xpText">0 / 5 weeks</span></div>
+      <div class="xpbar"><div class="xpfill" id="xpFill"></div></div>
+    </div>
+    <div class="wtabs" id="wtabs"></div>
+    <div class="card wpanel" id="wpanel"></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap center">
+    <span class="eyebrow">The loot</span>
+    <h2>10 skills you'll walk away with.</h2>
+    <p class="sub" style="margin:0 auto">These aren't roofing skills. They're <strong>life</strong> skills — they work in any career you pick.</p>
+    <div class="skillgrid">
+      <div class="skill"><span class="emo">🗣️</span>Communication</div>
+      <div class="skill"><span class="emo">🎤</span>Public speaking</div>
+      <div class="skill"><span class="emo">🧭</span>Leadership</div>
+      <div class="skill"><span class="emo">👔</span>Professionalism</div>
+      <div class="skill"><span class="emo">🎯</span>Goal setting</div>
+      <div class="skill"><span class="emo">🤝</span>Sales fundamentals</div>
+      <div class="skill"><span class="emo">🚀</span>Entrepreneurship</div>
+      <div class="skill"><span class="emo">🧩</span>Teamwork</div>
+      <div class="skill"><span class="emo">🛡️</span>Handling rejection</div>
+      <div class="skill"><span class="emo">💛</span>Customer service</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM CODE ============ -->
+<section id="code">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="background:#fff">The team code</span>
+      <h2>Think you can commit?</h2>
+      <p class="sub" style="margin:0 auto">Six rules. That's the whole contract. Check them off if you're in.</p>
+    </div>
+    <div class="codelist">
+      <label class="codeitem"><input type="checkbox" class="codecheck"> ⏰ Show up on time.</label>
+      <label class="codeitem"><input type="checkbox" class="codecheck"> ⚡ Bring a positive attitude.</label>
+      <label class="codeitem"><input type="checkbox" class="codecheck"> 🧠 Stay coachable — always learning.</label>
+      <label class="codeitem"><input type="checkbox" class="codecheck"> 🤝 Respect teammates & homeowners.</label>
+      <label class="codeitem"><input type="checkbox" class="codecheck"> 🦺 Represent RoofBuds like a pro.</label>
+      <label class="codeitem"><input type="checkbox" class="codecheck"> 🏗️ Work as one team.</label>
+    </div>
+    <div id="codeDone">🫡 That's the code. You'd fit right in.<br><a class="btn sm" style="margin-top:14px" href="sms:2817664227">Text us to apply →</a></div>
+  </div>
+</section>
+
+<!-- ============ LEVEL PATH ============ -->
+<section id="path">
+  <div class="wrap center">
+    <span class="eyebrow">After the summer</span>
+    <h2>Where this can go.</h2>
+    <p class="sub" style="margin:0 auto">Crush the internship, keep climbing. Standout interns can grow into real leadership roles at RoofBuds.</p>
+    <div class="path">
+      <div class="card step"><span class="lv">LV. 1</span><div class="emo">🌱</div><h3>Summer Intern</h3><p>Learn the game. Build the skills. Earn the trust.</p></div>
+      <div class="card step"><span class="lv">LV. 2</span><div class="emo">⭐</div><h3>Team Leader</h3><p>Run your own crew on outreach days.</p></div>
+      <div class="card step"><span class="lv">LV. 3</span><div class="emo">📋</div><h3>Project Coordinator</h3><p>Keep real roofing projects moving.</p></div>
+      <div class="card step"><span class="lv">LV. 4</span><div class="emo">👑</div><h3>Project Manager</h3><p>Own projects start to finish.</p></div>
+    </div>
+  </div>
+</section>
+<!-- ============ GAME ZONE ============ -->
+<section id="games">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">🕹️ The Game Zone</span>
+      <h2>Test your roof brain.</h2>
+      <p class="sub" style="margin:0 auto">Quick games to sharpen your sales instincts and boss moves before day one. No downloads, no sign-ups, no pressure.</p>
+    </div>
+
+    <div class="gtabs">
+      <button class="gtab on" data-game="quiz" onclick="showGame('quiz')">🧠 Roof IQ</button>
+      <button class="gtab" data-game="obj" onclick="showGame('obj')">💬 Objection Crusher</button>
+      <button class="gtab" data-game="boss" onclick="showGame('boss')">👑 Boss Mode</button>
+      <button class="gtab" data-game="pitch" onclick="showGame('pitch')">🎤 Pitch Roulette</button>
+    </div>
+
+    <!-- Roof IQ -->
+    <div class="gpanel on" id="g-quiz">
+      <div class="gcard" id="quizBox"></div>
+    </div>
+
+    <!-- Objection Crusher -->
+    <div class="gpanel" id="g-obj">
+      <div class="gcard" id="objBox"></div>
+    </div>
+
+    <!-- Boss Mode -->
+    <div class="gpanel" id="g-boss">
+      <div class="gcard" id="bossBox"></div>
+    </div>
+
+    <!-- Pitch Roulette -->
+    <div class="gpanel" id="g-pitch">
+      <div class="gcard" id="pitchBox"></div>
+    </div>
+
+    <p class="gfoot">Scores reset when you refresh — bragging rights don't. 📸 Screenshot your best run and bring it Thursday.</p>
+  </div>
+</section>
+
+<!-- ============ PARENTS ============ -->
+<section id="parents">
+  <div class="wrap center">
+    <span class="eyebrow">For the parents 👋</span>
+    <h2>Real mentorship. Safe environment.</h2>
+    <div class="card" style="text-align:left">
+      <p>This internship was created by RoofBuds founders — and Wunsche High School alumni — <strong>Guillermo Ortiz and Chris</strong>. The goal isn't to teach roofing. It's to give students real-world experience, mentorship, leadership development, and professional growth in a safe and supportive environment.</p>
+      <p style="margin-top:14px">Students meet <strong>Tuesdays, Wednesdays, and Thursdays</strong> from <strong>June 22 to July 23, 2026</strong>, and the program wraps with a graduation ceremony, certificates, awards, and a family celebration you're invited to.</p>
+      <p style="margin-top:14px">Thank you for supporting your student in this opportunity. We look forward to helping them build skills and confidence that will benefit them for years to come.</p>
+      <div class="founders">
+        <span class="emo">👷👷</span>
+        <div>Questions? Call or text us anytime.<br><a href="tel:2817664227">(281) 766-4227</a> · RoofBuds Roofing Solutions, Spring, TX</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="flogo">🏠 RoofBuds</div>
+  <p>Leadership & Sales Internship Program · Summer 2026</p>
+  <p style="margin-top:8px"><a href="./">← Back to RoofBuds main site</a> · <a href="sms:2817664227">Text (281) 766-4227 to apply</a></p>
+  <p style="margin-top:14px; opacity:.6">© 2026 RoofBuds Roofing Solutions · Spring, TX</p>
+</footer>
+<script>
+/* ================= 5-WEEK JOURNEY ================= */
+const WEEKS = [
+  {emo:"🎤", title:"Confidence & Communication", tag:"Find your voice.",
+   tue:"Welcome, introductions, expectations, communication skills & public speaking.",
+   wed:"First impressions, role-playing, field observation and training.",
+   thu:"First outreach day, confidence challenge, team recognition."},
+  {emo:"🛡️", title:"Rejection & Resilience", tag:"Get told no. Stay unstoppable.",
+   tue:"Handling rejection, objection-handling drills, confidence building.",
+   wed:"Apply communication and objection handling in the field.",
+   thu:"Competitions, lessons learned, resilience training."},
+  {emo:"💰", title:"Entrepreneurship & Money", tag:"Think like an owner.",
+   tue:"Business ownership, sales, personal finance, entrepreneurship.",
+   wed:"Outreach and inspection scheduling.",
+   thu:"Business pitch challenge and team competitions."},
+  {emo:"🏆", title:"Leadership & Professionalism", tag:"Lead the crew.",
+   tue:"Leadership, accountability, teamwork, professionalism.",
+   wed:"Team leadership activities and field training.",
+   thu:"Leadership recognition and team development."},
+  {emo:"🎓", title:"Career & Graduation", tag:"Launch what's next.",
+   tue:"Career planning, networking, interviews, future opportunities.",
+   wed:"Final outreach day.",
+   thu:"Graduation ceremony, certificates, awards & family celebration."}
+];
+const viewed = new Set();
+const wtabs = document.getElementById("wtabs");
+WEEKS.forEach((w,i)=>{
+  const b = document.createElement("button");
+  b.className = "wtab"; b.textContent = w.emo + " Week " + (i+1);
+  b.setAttribute("aria-pressed","false");
+  b.onclick = ()=>setWeek(i);
+  wtabs.appendChild(b);
+});
+function setWeek(i){
+  viewed.add(i);
+  document.querySelectorAll(".wtab").forEach((t,j)=>{
+    t.classList.toggle("on", j===i);
+    t.setAttribute("aria-pressed", j===i ? "true" : "false");
+  });
+  const w = WEEKS[i];
+  document.getElementById("wpanel").innerHTML = `
+    <div>
+      <div class="hero-emo">${w.emo}</div>
+      <h3 style="font-size:1.5rem; margin-top:10px">Week ${i+1}:<br>${w.title}</h3>
+      <p class="tagline">"${w.tag}"</p>
+    </div>
+    <div>
+      <div class="dayrow"><span class="d">TUE</span><span>${w.tue}</span></div>
+      <div class="dayrow"><span class="d">WED</span><span>${w.wed}</span></div>
+      <div class="dayrow"><span class="d">THU</span><span>${w.thu}</span></div>
+    </div>`;
+  const pct = viewed.size/WEEKS.length*100;
+  document.getElementById("xpFill").style.width = pct + "%";
+  document.getElementById("xpText").textContent =
+    viewed.size === WEEKS.length ? "🏅 Full map unlocked!" : viewed.size + " / 5 weeks";
+}
+setWeek(0);
+
+/* ================= TEAM CODE ================= */
+document.querySelectorAll(".codecheck").forEach(c=>{
+  c.addEventListener("change", ()=>{
+    const all = [...document.querySelectorAll(".codecheck")].every(x=>x.checked);
+    document.getElementById("codeDone").style.display = all ? "block" : "none";
+  });
+});
+
+/* ================= GAME TABS ================= */
+function showGame(id){
+  document.querySelectorAll(".gtab").forEach(t=>t.classList.toggle("on", t.dataset.game===id));
+  document.querySelectorAll(".gpanel").forEach(p=>p.classList.toggle("on", p.id==="g-"+id));
+}
+
+/* ================= GAME 1: ROOF IQ ================= */
+const QUIZ = [
+  {q:"What's the most common roofing material on Texas homes?",
+   o:["Asphalt shingles","Clay tile","Solar glass","Straw"], a:0,
+   why:"Around 4 out of 5 U.S. homes use asphalt shingles — affordable, tough, and quick to install."},
+  {q:"After a hailstorm, inspectors mostly look for…",
+   o:["Dents & bruises on shingles","A bigger attic","Faded paint","Newer shingles"], a:0,
+   why:"Hail leaves soft 'bruises' and knocks off granules — invisible from the street, obvious up close."},
+  {q:"Profit equals…",
+   o:["Revenue − expenses","Revenue + expenses","Whatever's in your pocket","Sales × 2"], a:0,
+   why:"Money in minus money out. If you don't track expenses, you don't know if you're actually winning."},
+  {q:"In sales, a 'lead' is…",
+   o:["A potential customer","A metal pipe","The team captain","A finished job"], a:0,
+   why:"A lead is someone who might buy. Every business runs on finding and following up with leads."},
+  {q:"You knock 50 doors and 5 book inspections. Your booking rate is…",
+   o:["10%","5%","25%","50%"], a:0,
+   why:"5 ÷ 50 = 10%. Pros track their numbers — because numbers tell you what to improve."},
+  {q:"First impressions form in about…",
+   o:["7 seconds","7 minutes","An hour","A week"], a:0,
+   why:"Studies say seconds. Posture, smile, and a clear intro do most of the work before you finish a sentence."},
+  {q:"Homeowner's insurance often covers roof damage from…",
+   o:["Hail & wind storms","Old age","Bad paint jobs","Loud music"], a:0,
+   why:"Storm damage is usually covered — that's why documented inspections matter so much after Texas hail."},
+  {q:"Best move right after hearing 'no'?",
+   o:["Stay polite, learn, next door","Argue your case","Quit for the day","Take it personally"], a:0,
+   why:"Every 'no' is practice and data. The pros reset in seconds — Week 2 is all about this."}
+];
+let qz = {i:0, score:0, locked:false};
+function shuffle(arr){
+  const a = arr.map((t,idx)=>({t, orig:idx}));
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function renderQuiz(){
+  const box = document.getElementById("quizBox");
+  if(qz.i >= QUIZ.length){
+    const s = qz.score;
+    const r = s<=2 ? ["🐣","Rookie Knocker","Everyone starts somewhere — Week 1 has your name on it."]
+          : s<=5 ? ["🔨","Shingle Star","Solid instincts. A summer of reps and you're dangerous."]
+          : s<=7 ? ["⛈️","Sales Storm","You already think like a closer. Thursday competitions, beware."]
+          : ["👑","Future Roof Boss","Perfect score. Guillermo and Chris want to meet you."];
+    box.innerHTML = `<div class="result">
+      <div class="remo">${r[0]}</div>
+      <div class="rtitle">${r[1]}</div>
+      <p>You scored <strong>${s} / ${QUIZ.length}</strong>. ${r[2]}</p>
+      <button class="btn orange" onclick="resetQuiz()">Play again</button>
+    </div>`;
+    return;
+  }
+  const Q = QUIZ[qz.i];
+  const opts = shuffle(Q.o);
+  qz.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">🧠 Roof IQ</div>
+    <div class="gmeta">8 quick questions · roofing + business basics</div>
+    <span class="prog">Q ${qz.i+1} / ${QUIZ.length} · Score ${qz.score}</span>
+    <h3 style="margin-bottom:16px; font-family:'Space Grotesk'; font-weight:700; font-size:1.15rem">${Q.q}</h3>
+    <div id="qOpts">${opts.map(o=>`<button class="opt" data-orig="${o.orig}" onclick="answerQuiz(this)">${o.t}</button>`).join("")}</div>
+    <div id="qWhy"></div>`;
+}
+function answerQuiz(btn){
+  if(qz.locked) return;
+  qz.locked = true;
+  const Q = QUIZ[qz.i];
+  const correct = +btn.dataset.orig === Q.a;
+  if(correct) qz.score++;
+  document.querySelectorAll("#qOpts .opt").forEach(b=>{
+    b.disabled = true;
+    if(+b.dataset.orig === Q.a) b.classList.add("good");
+    else if(b === btn) b.classList.add("bad");
+    else b.classList.add("dim");
+  });
+  document.getElementById("qWhy").innerHTML = `
+    <div class="why">${correct ? "✅ Nailed it!" : "❌ Not quite."} ${Q.why}</div>
+    <button class="btn sm sky" onclick="qz.i++; renderQuiz()">${qz.i+1 >= QUIZ.length ? "See my result →" : "Next question →"}</button>`;
+}
+function resetQuiz(){ qz = {i:0, score:0, locked:false}; renderQuiz(); }
+renderQuiz();
+
+/* ================= GAME 2: OBJECTION CRUSHER ================= */
+const OBJ = [
+  {line:"“I'm not interested.”",
+   o:[{t:"“Oh… OK, sorry. Bye.”", best:false},
+      {t:"“Totally fair! One quick question — has anyone checked your roof since the last hailstorm?”", best:true},
+      {t:"“You will be interested when your roof starts leaking.”", best:false}],
+   why:"Stay friendly and ask one low-pressure question. Most 'not interested' just means 'I don't know you yet.'"},
+  {line:"“Aren't you a little young for this?”",
+   o:[{t:"Mumble something and walk away.", best:false},
+      {t:"“Age is just a number, ma'am.”", best:false},
+      {t:"“Young, trained, and hungry — and our licensed team does the inspection. The free look costs you nothing.”", best:true}],
+   why:"Own it with confidence and lean on the team's credibility. Confidence + honesty beats pretending."},
+  {line:"“I don't have time right now.”",
+   o:[{t:"“It only takes 20 minutes, I promise.”", best:false},
+      {t:"“Respect! 15-second version: free storm check, we text you the photos. Would later this week work better?”", best:true},
+      {t:"“Everyone says that…”", best:false}],
+   why:"Honor their time, shrink the ask, and offer an easy next step. Never guilt-trip a homeowner."},
+  {line:"“We already have a roofer.”",
+   o:[{t:"“Ours is way better than theirs.”", best:false},
+      {t:"“Love that — a free second opinion never hurts. If your roofer nailed it, we'll happily tell you.”", best:true},
+      {t:"“Fine, whatever.”", best:false}],
+   why:"Never trash the competition. Add free value instead — it builds instant trust."},
+  {line:"“How do I know this isn't a scam?”",
+   o:[{t:"“Wow. How dare you.”", best:false},
+      {t:"“No lol.”", best:false},
+      {t:"“Great question — you should ask that! We're RoofBuds, local here in Spring. Here's our info, nothing gets signed or paid today, and our Google reviews are all public.”", best:true}],
+   why:"Transparency beats defensiveness every time. Smart homeowners ask this — celebrate it."}
+];
+let ob = {i:0, score:0, locked:false};
+function renderObj(){
+  const box = document.getElementById("objBox");
+  if(ob.i >= OBJ.length){
+    const s = ob.score;
+    const r = s<=1 ? ["😅","Door-Slam Magnet","Rough start — but that's literally what Week 2 is for."]
+          : s<=3 ? ["🙂","Smooth Talker in Training","You've got the instincts. Now add the reps."]
+          : s===4 ? ["😎","Objection Handler","Cool under pressure. Homeowners will love you."]
+          : ["🧊","Ice-Cold Closer","Five for five. You could teach the Tuesday session."];
+    box.innerHTML = `<div class="result">
+      <div class="remo">${r[0]}</div>
+      <div class="rtitle">${r[1]}</div>
+      <p>You crushed <strong>${s} / ${OBJ.length}</strong> objections. ${r[2]}</p>
+      <button class="btn orange" onclick="resetObj()">Run it back</button>
+    </div>`;
+    return;
+  }
+  const S = OBJ[ob.i];
+  const opts = shuffle(S.o);
+  ob.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">💬 Objection Crusher</div>
+    <div class="gmeta">A homeowner just said this. Pick your best comeback.</div>
+    <span class="prog">Door ${ob.i+1} / ${OBJ.length} · Crushed ${ob.score}</span>
+    <div class="bubble">${S.line}</div>
+    <div id="oOpts">${opts.map(o=>`<button class="opt" data-best="${o.t===S.o.find(x=>x.best).t}" onclick="answerObj(this)">${o.t}</button>`).join("")}</div>
+    <div id="oWhy"></div>`;
+}
+function answerObj(btn){
+  if(ob.locked) return;
+  ob.locked = true;
+  const S = OBJ[ob.i];
+  const right = btn.dataset.best === "true";
+  if(right) ob.score++;
+  document.querySelectorAll("#oOpts .opt").forEach(b=>{
+    b.disabled = true;
+    if(b.dataset.best === "true") b.classList.add("good");
+    else if(b === btn) b.classList.add("bad");
+    else b.classList.add("dim");
+  });
+  document.getElementById("oWhy").innerHTML = `
+    <div class="why">${right ? "✅ Crushed it!" : "❌ Door slammed."} ${S.why}</div>
+    <button class="btn sm sky" onclick="ob.i++; renderObj()">${ob.i+1 >= OBJ.length ? "See my result →" : "Next door →"}</button>`;
+}
+function resetObj(){ ob = {i:0, score:0, locked:false}; renderObj(); }
+renderObj();
+
+/* ================= GAME 3: BOSS MODE ================= */
+const ROUNDS = [
+  {title:"Month 1 · Get your name out", desc:"You just launched your own roofing company with $1,000. How do you find your first customers?",
+   c:[{t:"🥾 Door-knock every evening (free)", cash:400, rep:10, note:"Sweat equity. Free marketing, priceless reps — and neighbors remember your face."},
+      {t:"🪧 Buy 20 yard signs ($150)", cash:150, rep:5, note:"A few calls trickle in. Signs work… slowly."},
+      {t:"📱 Blast paid social ads ($300)", cash:100, rep:12, note:"Tons of views, a couple of jobs. Ads burn cash fast when you're new."}]},
+  {title:"Month 2 · Price your first big job", desc:"A homeowner wants a full roof replacement. How do you price it?",
+   c:[{t:"📉 Lowball it just to win", cash:200, rep:8, note:"You won the job… and barely paid your crew. Cheap prices attract cheap margins."},
+      {t:"⚖️ Fair price + photo documentation", cash:500, rep:10, note:"They paid happily because they could SEE the work. Fair + transparent wins."},
+      {t:"💎 Premium price, no proof", cash:800, rep:-10, note:"They paid… then posted about it. Overcharging catches up with you."}]},
+  {title:"Month 3 · Build your crew", desc:"Jobs are stacking up. Who do you hire?",
+   c:[{t:"🫰 The cheapest crew you can find", cash:300, rep:-15, note:"Two callbacks and a leaky valley later… cheap labor is expensive."},
+      {t:"🛠️ Experienced crew (costs more)", cash:150, rep:15, note:"Slimmer profit today, flawless installs — and flawless installs become referrals."},
+      {t:"😤 Do every job yourself", cash:250, rep:-5, note:"You're exhausted, behind schedule, and can't grow. Bosses build teams."}]},
+  {title:"Month 4 · A storm hits Spring 🌩️", desc:"Hail just pounded the whole neighborhood. Your phone won't stop ringing.",
+   c:[{t:"🏃 Chase every job, rush the work", cash:900, rep:-20, note:"Big money month — and a trail of sloppy installs with your name on them."},
+      {t:"🎯 Take only what you can do right", cash:500, rep:15, note:"You turned some down, crushed the rest. Every one became a 5-star review."},
+      {t:"🤑 Triple your prices overnight", cash:700, rep:-25, note:"'Storm chaser' reputation unlocked. Not the achievement you wanted."}]},
+  {title:"Month 5 · A bad review drops", desc:"A customer posts a public complaint about a leak after your install. What now?",
+   c:[{t:"🙈 Ignore it — it'll blow over", cash:0, rep:-20, note:"It didn't blow over. Everyone googles you before they buy."},
+      {t:"🛠️ Fix it free + reply publicly", cash:-150, rep:25, note:"Your calm reply got more likes than the complaint. That's how trust is built."},
+      {t:"🥊 Argue in the comments", cash:0, rep:-30, note:"You won the argument and lost the neighborhood."}]}
+];
+let bs = {round:0, cash:1000, rep:50, locked:false};
+function clampRep(v){ return Math.max(0, Math.min(100, v)); }
+function bossMeters(){
+  const repColor = bs.rep>=60 ? "var(--mint)" : bs.rep>=30 ? "var(--sun)" : "var(--red)";
+  return `<div class="meters">
+    <div class="meter"><div class="mlabel">💵 Cash</div><div class="mval">$${bs.cash.toLocaleString()}</div></div>
+    <div class="meter"><div class="mlabel">⭐ Reputation</div><div class="mval">${bs.rep} / 100</div>
+      <div class="repbar"><div class="repfill" style="width:${bs.rep}%; background:${repColor}"></div></div></div>
+  </div>`;
+}
+function renderBoss(){
+  const box = document.getElementById("bossBox");
+  if(bs.round >= ROUNDS.length){
+    let r;
+    if(bs.rep>=80 && bs.cash>=2000) r = ["👑","Roofing Empire","High cash AND high trust. Referrals will run your marketing for free. This is how Guillermo and Chris actually built RoofBuds."];
+    else if(bs.rep>=60) r = ["🏆","Trusted Local Biz","Your reputation is your engine now — reviews and referrals bring the next 100 jobs."];
+    else if(bs.cash>=2200) r = ["🤑","Quick-Buck Operator","You're cash-rich and trust-broke. No referrals, no repeat customers, no future. In roofing, reputation IS the business."];
+    else r = ["📉","Back to the Drawing Board","Low cash, low trust. Good news: Week 3 of the internship covers exactly what went wrong."];
+    box.innerHTML = `
+      <div class="gtitle">👑 Boss Mode</div>
+      ${bossMeters()}
+      <div class="result">
+        <div class="remo">${r[0]}</div>
+        <div class="rtitle">${r[1]}</div>
+        <p>Final: <strong>$${bs.cash.toLocaleString()}</strong> cash · <strong>${bs.rep}/100</strong> reputation.<br>${r[2]}</p>
+        <button class="btn orange" onclick="resetBoss()">Start a new company</button>
+      </div>`;
+    return;
+  }
+  const R = ROUNDS[bs.round];
+  bs.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">👑 Boss Mode: Run Your Own Roofing Co.</div>
+    <div class="gmeta">5 decisions decide your company's fate. Balance the money and the reputation.</div>
+    ${bossMeters()}
+    <span class="prog">${R.title}</span>
+    <p style="font-weight:500; margin:12px 0 16px">${R.desc}</p>
+    <div id="bOpts">${R.c.map((c,i)=>`<button class="opt" onclick="chooseBoss(${i})">${c.t}</button>`).join("")}</div>
+    <div id="bWhy"></div>`;
+}
+function chooseBoss(i){
+  if(bs.locked) return;
+  bs.locked = true;
+  const C = ROUNDS[bs.round].c[i];
+  bs.cash += C.cash;
+  bs.rep = clampRep(bs.rep + C.rep);
+  const cashTxt = (C.cash>=0?"+$":"−$") + Math.abs(C.cash);
+  const repTxt = (C.rep>=0?"+":"") + C.rep + " rep";
+  document.querySelectorAll("#bOpts .opt").forEach(b=>{ b.disabled = true; b.classList.add("dim"); });
+  document.getElementById("bWhy").innerHTML = `
+    <div class="why"><strong>${cashTxt} · ${repTxt}.</strong> ${C.note}</div>
+    <button class="btn sm sky" onclick="bs.round++; renderBoss()">${bs.round+1 >= ROUNDS.length ? "See how it ends →" : "Next month →"}</button>`;
+  renderMetersOnly();
+}
+function renderMetersOnly(){
+  const m = document.querySelector("#bossBox .meters");
+  if(m) m.outerHTML = bossMeters();
+}
+function resetBoss(){ bs = {round:0, cash:1000, rep:50, locked:false}; renderBoss(); }
+renderBoss();
+
+/* ================= GAME 4: PITCH ROULETTE ================= */
+const PROMPTS = [
+  "Convince a homeowner to book a FREE roof inspection — 30 seconds, go.",
+  "Introduce yourself at the door like a total pro.",
+  "Explain why hail damage matters even when the roof 'looks fine' from the street.",
+  "Sell your favorite snack like it's a $10,000 product.",
+  "Pitch RoofBuds to your best friend's parents.",
+  "You get 30 seconds with your dream mentor. What do you say?",
+  "Explain what makes a great teammate — like you actually mean it.",
+  "Convince the team to try YOUR business idea.",
+  "Tell the story of a time you didn't give up. Make it inspiring.",
+  "Sell summer itself. Why is it the greatest season?"
+];
+let pt = {timer:null, left:30, spinning:false};
+function renderPitch(state){
+  const box = document.getElementById("pitchBox");
+  if(state === "idle" || !state){
+    box.innerHTML = `
+      <div class="gtitle">🎤 Pitch Roulette</div>
+      <div class="gmeta">Spin a random prompt, then talk for 30 seconds straight. Out loud. Yes, really.</div>
+      <div class="bubble" id="ptPrompt" style="min-height:84px; border-radius:18px">Hit spin to get your prompt…</div>
+      <div class="center"><button class="btn orange" id="ptSpin" onclick="spinPitch()">🎰 Spin the prompt</button></div>`;
+  }
+}
+function spinPitch(){
+  if(pt.spinning) return;
+  pt.spinning = true;
+  clearInterval(pt.timer);
+  const el = document.getElementById("ptPrompt");
+  let n = 0;
+  const cycle = setInterval(()=>{
+    el.textContent = PROMPTS[Math.floor(Math.random()*PROMPTS.length)];
+    if(++n >= 9){
+      clearInterval(cycle);
+      pt.spinning = false;
+      const final = PROMPTS[Math.floor(Math.random()*PROMPTS.length)];
+      el.innerHTML = "<strong>" + final + "</strong>";
+      document.getElementById("pitchBox").insertAdjacentHTML("beforeend",
+        `<div class="center" id="ptStartWrap" style="margin-top:16px"><button class="btn sky" onclick="startPitchTimer()">▶ Start the 30-second clock</button></div>`);
+      document.getElementById("ptSpin").parentElement.remove();
+    }
+  }, 110);
+}
+function startPitchTimer(){
+  document.getElementById("ptStartWrap").remove();
+  pt.left = 30;
+  document.getElementById("pitchBox").insertAdjacentHTML("beforeend", `
+    <div id="ptTimerZone">
+      <div class="bignum" id="ptNum">30</div>
+      <div class="timerbar"><div class="timerfill" id="ptFill"></div></div>
+      <p class="center" style="font-weight:700">Talk. Don't stop. Fill the whole 30. 🔥</p>
+    </div>`);
+  pt.timer = setInterval(()=>{
+    pt.left--;
+    const num = document.getElementById("ptNum");
+    const fill = document.getElementById("ptFill");
+    if(!num){ clearInterval(pt.timer); return; }
+    num.textContent = pt.left;
+    fill.style.width = (pt.left/30*100) + "%";
+    if(pt.left <= 5) num.style.color = "var(--red)";
+    if(pt.left <= 0){
+      clearInterval(pt.timer);
+      document.getElementById("ptTimerZone").innerHTML = `
+        <div class="result">
+          <div class="remo">⏰</div>
+          <div class="rtitle">Time! How'd you do?</div>
+          <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+            <button class="btn sm ghost" onclick="ratePitch(0)">😅 Froze up</button>
+            <button class="btn sm ghost" onclick="ratePitch(1)">🙂 Not bad</button>
+            <button class="btn sm ghost" onclick="ratePitch(2)">🔥 Nailed it</button>
+          </div>
+          <div id="ptFeedback" style="margin-top:16px; font-weight:700"></div>
+        </div>`;
+    }
+  }, 1000);
+}
+function ratePitch(k){
+  const msgs = [
+    "😅 Totally normal — confidence is a muscle, and reps are the workout. Spin again!",
+    "🙂 Solid! Now do it again 10% louder and with a smile. That's the whole trick.",
+    "🔥 Stage presence detected. Week 3's business pitch challenge has your name on it."
+  ];
+  document.getElementById("ptFeedback").innerHTML = msgs[k] +
+    `<div style="margin-top:14px"><button class="btn sm orange" onclick="renderPitch('idle')">🎰 Spin a new prompt</button></div>`;
+}
+renderPitch("idle");
+</script>
+</body>
+</html>
