@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3AB5FF">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Week 4 of the RoofBuds Internship — Leadership & Professionalism. July 14–16, 2026. This week's schedule, the Leader's Playbook, and leadership games.">
+<title>Week 4: Leadership & Professionalism — RoofBuds Internship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D1B2E; --ink:#0A1523; --sky:#3AB5FF; --sun:#FFC53D;
+  --orange:#FF6B2C; --paper:#F2F8FF; --skylight:#C7E6FF; --mint:#2BC48A; --red:#FF5A5A; --white:#fff;
+  color-scheme:light;
+}
+*{box-sizing:border-box; margin:0; padding:0}
+html{scroll-behavior:smooth; background:#C7E6FF}
+body{font-family:'Space Grotesk',system-ui,sans-serif; background:#C7E6FF !important; color:var(--navy); line-height:1.55; -webkit-font-smoothing:antialiased}
+::selection{background:var(--sun); color:var(--navy)}
+img,svg{display:block; max-width:100%}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:'Archivo Black',sans-serif; line-height:1.08; letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,7vw,4.4rem)}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem); margin-bottom:14px}
+h3{font-size:1.15rem}
+.wrap{max-width:1100px; margin:0 auto; padding:0 20px}
+section{padding:76px 0}
+.center{text-align:center}
+.sub{font-size:1.1rem; max-width:640px; opacity:.95}
+.eyebrow{display:inline-block; background:var(--sun); border:3px solid var(--navy); border-radius:999px; padding:7px 16px; font-weight:700; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; box-shadow:3px 3px 0 var(--navy); margin-bottom:18px}
+:focus-visible{outline:3px solid var(--orange); outline-offset:3px; border-radius:6px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; border:3px solid var(--navy); border-radius:14px; padding:14px 24px; background:var(--sun); color:var(--navy); text-decoration:none; box-shadow:5px 5px 0 var(--navy); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease}
+.btn:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--navy)}
+.btn:active{transform:translate(5px,5px); box-shadow:0 0 0 var(--navy)}
+.btn.orange{background:var(--orange); color:#fff}
+.btn.sky{background:var(--sky)}
+.btn.ghost{background:#fff}
+.btn.sm{padding:10px 16px; font-size:.92rem; border-radius:11px}
+.btn:disabled{opacity:.45; cursor:not-allowed; transform:none}
+
+/* ---------- cards & stickers ---------- */
+.card{background:#fff; border:3px solid var(--navy); border-radius:18px; box-shadow:7px 7px 0 rgba(13,27,46,.9); padding:24px}
+.chip{display:inline-block; background:#fff; border:2.5px solid var(--navy); border-radius:999px; padding:5px 13px; font-weight:700; font-size:.85rem; box-shadow:2px 2px 0 var(--navy); margin:4px 4px 0 0}
+
+/* ---------- nav ---------- */
+nav{position:sticky; top:0; z-index:50; background:var(--navy); color:#fff; border-bottom:3px solid var(--ink)}
+.navin{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 20px; max-width:1100px; margin:0 auto}
+.logo{font-family:'Archivo Black',sans-serif; font-size:1.15rem; text-decoration:none; display:flex; align-items:center; gap:8px}
+.logo .tag{font-family:'Space Grotesk',sans-serif; font-size:.65rem; background:var(--orange); color:#fff; border:2px solid var(--navy); border-radius:6px; padding:2px 7px; letter-spacing:.08em}
+.navlinks{display:flex; gap:20px; font-weight:700; font-size:.95rem}
+.navlinks a{text-decoration:none; opacity:.85}
+.navlinks a:hover{opacity:1; color:var(--orange)}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 0; overflow:hidden; background:var(--sky)}
+.herogrid{display:grid; grid-template-columns:1.15fr .85fr; gap:36px; align-items:center}
+.hero h1{color:#fff; text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero h1 .hl{color:var(--orange); text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero .sub{margin:18px 0 26px}
+.ctarow{display:flex; gap:14px; flex-wrap:wrap}
+.datechips{margin-top:26px}
+.board{position:relative; min-height:360px}
+.stick{position:absolute; background:#fff; border:3px solid var(--navy); border-radius:16px; padding:14px 18px; font-weight:700; box-shadow:6px 6px 0 var(--navy); text-align:center; animation:float 5s ease-in-out infinite}
+.stick .big{font-size:2.1rem; display:block; margin-bottom:2px}
+.s1{top:4%; left:6%; transform:rotate(-7deg); background:var(--sun)}
+.s2{top:2%; right:2%; transform:rotate(5deg)}
+.s3{top:42%; left:0%; transform:rotate(4deg); background:var(--sun); animation-delay:.8s}
+.s4{top:44%; right:8%; transform:rotate(-4deg); animation-delay:1.4s}
+.s5{bottom:0%; left:28%; transform:rotate(-2deg); background:var(--orange); color:#fff; animation-delay:2s}
+@keyframes float{0%,100%{margin-top:0}50%{margin-top:-9px}}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--navy); color:var(--sun); border-top:3px solid var(--navy); border-bottom:3px solid var(--navy); overflow:hidden; padding:12px 0; margin-top:60px}
+.ticker-in{display:flex; gap:0; white-space:nowrap; font-family:'Archivo Black',sans-serif; font-size:1rem; animation:slide 26s linear infinite}
+.ticker-in span{padding-right:34px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- weekly rhythm ---------- */
+.rgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:34px}
+.rcard .day{display:inline-block; background:var(--navy); color:var(--sun); border-radius:8px; padding:4px 12px; font-family:'Archivo Black',sans-serif; font-size:.8rem; letter-spacing:.05em; margin-bottom:12px}
+.rcard .emo{font-size:2rem; margin-bottom:8px}
+
+/* ---------- journey ---------- */
+.xpwrap{max-width:520px; margin:26px auto 30px}
+.xplabel{display:flex; justify-content:space-between; font-weight:700; font-size:.9rem; margin-bottom:6px}
+.xpbar{height:20px; background:#fff; border:3px solid var(--navy); border-radius:999px; overflow:hidden}
+.xpfill{height:100%; width:0%; background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 12px,#25a877 12px,#25a877 24px); transition:width .4s ease}
+.wtabs{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:26px}
+.wtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:.95rem; background:#fff; border:3px solid var(--navy); border-radius:12px; padding:10px 16px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.wtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.wtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.wpanel{display:grid; grid-template-columns:.9fr 1.1fr; gap:26px; align-items:start}
+.wpanel .hero-emo{font-size:4rem; line-height:1}
+.wpanel .tagline{font-size:1.05rem; font-weight:500; opacity:.85; margin-top:8px}
+.dayrow{display:flex; gap:14px; align-items:flex-start; padding:13px 0; border-bottom:2px dashed rgba(13,27,46,.25)}
+.dayrow:last-child{border-bottom:none}
+.dayrow .d{flex:0 0 52px; background:var(--sky); border:2.5px solid var(--navy); border-radius:9px; text-align:center; font-family:'Archivo Black',sans-serif; font-size:.78rem; padding:5px 0}
+
+/* ---------- skills ---------- */
+.skillgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:16px; margin-top:34px}
+.skill{background:#fff; border:3px solid var(--navy); border-radius:16px; box-shadow:5px 5px 0 var(--navy); padding:18px 12px; text-align:center; font-weight:700; transition:transform .12s}
+.skill:hover{transform:rotate(-2deg) scale(1.03)}
+.skill .emo{font-size:2rem; display:block; margin-bottom:6px}
+
+/* ---------- team code ---------- */
+.codelist{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:30px}
+.codeitem{display:flex; align-items:center; gap:14px; background:#fff; border:3px solid var(--navy); border-radius:14px; padding:15px 18px; font-weight:700; cursor:pointer; box-shadow:4px 4px 0 var(--navy)}
+.codeitem input{width:22px; height:22px; accent-color:var(--orange); cursor:pointer; flex-shrink:0}
+#codeDone{display:none; margin:26px auto 0; max-width:560px; background:var(--navy); color:var(--sun); text-align:center; font-family:'Archivo Black',sans-serif; font-size:1.2rem; border-radius:16px; padding:20px; border:3px solid var(--navy); box-shadow:6px 6px 0 rgba(13,27,46,.4)}
+
+/* ---------- level path ---------- */
+.path{display:flex; gap:14px; align-items:stretch; margin-top:36px; flex-wrap:wrap}
+.step{flex:1; min-width:190px; position:relative}
+.step .lv{position:absolute; top:-14px; left:16px; background:var(--orange); color:#fff; border:2.5px solid var(--navy); border-radius:8px; font-family:'Archivo Black',sans-serif; font-size:.75rem; padding:3px 9px}
+.step .emo{font-size:1.9rem; margin-bottom:6px}
+.step p{font-size:.92rem; opacity:.85; font-weight:500}
+
+
+/* ---------- game zone ---------- */
+#games .eyebrow{background:var(--orange); color:#fff}
+.gtabs{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin:34px 0 30px}
+.gtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:14px; padding:13px 20px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.gtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.gtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.gpanel{display:none; max-width:760px; margin:0 auto}
+.gpanel.on{display:block}
+.gcard{background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:20px; box-shadow:8px 8px 0 rgba(13,27,46,.9); padding:28px}
+.gtitle{font-family:'Archivo Black',sans-serif; font-size:1.3rem; margin-bottom:4px}
+.gmeta{font-size:.9rem; opacity:.75; margin-bottom:18px; font-weight:500}
+.opt{display:block; width:100%; text-align:left; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:14px 16px; margin-bottom:12px; cursor:pointer; transition:transform .1s; box-shadow:3px 3px 0 var(--navy)}
+.opt:hover{transform:translate(1px,1px); box-shadow:2px 2px 0 var(--navy)}
+.opt.good{background:var(--mint); color:#fff; border-color:#0d7a52}
+.opt.bad{background:var(--red); color:#fff; border-color:#a12626}
+.opt.dim{opacity:.45}
+.opt:disabled{cursor:default; transform:none}
+.why{background:var(--paper); border:2.5px dashed var(--navy); border-radius:12px; padding:14px 16px; font-weight:500; margin:6px 0 16px}
+.prog{font-family:'Archivo Black',sans-serif; font-size:.85rem; background:var(--sky); display:inline-block; border:2.5px solid var(--navy); border-radius:8px; padding:4px 12px; margin-bottom:16px}
+.bubble{background:var(--paper); border:3px solid var(--navy); border-radius:18px 18px 18px 4px; padding:16px 18px; font-size:1.1rem; font-weight:700; margin-bottom:18px; position:relative}
+.bubble::before{content:"🚪🗣️"; display:block; font-size:1.3rem; margin-bottom:6px}
+.meters{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:20px}
+.meter{flex:1; min-width:200px; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:12px 14px}
+.meter .mlabel{font-size:.8rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; opacity:.7}
+.meter .mval{font-family:'Archivo Black',sans-serif; font-size:1.4rem}
+.repbar{height:12px; background:#fff; border:2px solid var(--navy); border-radius:99px; overflow:hidden; margin-top:6px}
+.repfill{height:100%; background:var(--mint); width:50%; transition:width .35s, background .35s}
+.bignum{font-family:'Archivo Black',sans-serif; font-size:4rem; text-align:center; margin:10px 0}
+.timerbar{height:16px; background:var(--paper); border:3px solid var(--navy); border-radius:99px; overflow:hidden; margin:8px 0 18px}
+.timerfill{height:100%; width:100%; background:var(--orange); transition:width 1s linear}
+.result{text-align:center; padding:10px 0}
+.result .remo{font-size:3.4rem}
+.result .rtitle{font-family:'Archivo Black',sans-serif; font-size:1.5rem; margin:8px 0 4px}
+.result p{font-weight:500; opacity:.85; max-width:480px; margin:0 auto 18px}
+.gfoot{text-align:center; margin-top:26px; font-size:.9rem; opacity:.85}
+
+/* ---------- parents ---------- */
+#parents .card{max-width:780px; margin:30px auto 0}
+#parents .founders{display:flex; gap:14px; align-items:center; margin-top:20px; padding-top:20px; border-top:2px dashed rgba(13,27,46,.25); font-weight:700}
+#parents .founders .emo{font-size:2rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink); color:#cfe3ff; padding:44px 20px; text-align:center; font-size:.95rem}
+footer a{color:var(--sun); font-weight:700}
+footer .flogo{font-family:'Archivo Black',sans-serif; color:#fff; font-size:1.2rem; margin-bottom:10px}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .herogrid{grid-template-columns:1fr}
+  .board{min-height:320px; margin-top:10px}
+  .wpanel{grid-template-columns:1fr}
+  .rgrid{grid-template-columns:1fr}
+  .codelist{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .navlinks{display:none}
+  section{padding:56px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker-in{animation:none}
+  .stick{animation:none}
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+
+/* ---------- week 4 additions ---------- */
+.mission{margin-top:14px; background:var(--sun); border:2.5px solid var(--navy); border-radius:12px; padding:10px 14px; font-weight:700; font-size:.92rem; box-shadow:3px 3px 0 var(--navy)}
+.pgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:18px; margin-top:34px; text-align:left}
+.pcard .pemo{font-size:2rem; margin-bottom:8px}
+.pcard p{font-size:.95rem; opacity:.85; font-weight:500; margin-top:6px}
+.pcard .pnum{position:absolute; top:-14px; right:16px; background:var(--sky); border:2.5px solid var(--navy); border-radius:8px; font-family:'Archivo Black',sans-serif; font-size:.75rem; padding:3px 9px}
+.pcard{position:relative}
+.duo{display:flex; gap:14px; margin-top:6px}
+.duo .opt{width:auto; flex:1; text-align:center; font-size:1.15rem}
+.behavior{background:var(--paper); border:3px solid var(--navy); border-radius:16px; padding:22px 18px; font-weight:700; font-size:1.15rem; text-align:center; margin-bottom:16px}
+.soInput{font-family:inherit; font-weight:700; font-size:1rem; color:var(--navy); background:#fff; border:3px solid var(--navy); border-radius:12px; padding:12px 16px; width:100%; max-width:340px; box-shadow:3px 3px 0 var(--navy)}
+.soInput:focus{outline:3px solid var(--orange); outline-offset:2px}
+.traitrow{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:18px 0 8px}
+.wtab.trait.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+</style>
+</head>
+<body id="top">
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="navin">
+    <a class="logo" href="#top">🏠 RoofBuds <span class="tag">WEEK 4</span></a>
+    <div class="navlinks">
+      <a href="#schedule">This Week</a>
+      <a href="#playbook">Playbook</a>
+      <a href="#games">Games</a>
+      <a href="#shout">Shout-Outs</a>
+    </div>
+    <a class="btn sm orange" href="internship.html">Program home</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <span class="eyebrow">🗓️ July 14–16 · Week 4 of 5</span>
+      <h1>Lead<br>the <span class="hl">crew.</span></h1>
+      <p class="sub">Week 4 is Leadership & Professionalism. You've built the confidence, taken the no's, and learned the money game — now it's time to make the people around you better.</p>
+      <div class="ctarow">
+        <a class="btn orange" href="#schedule">This week's schedule</a>
+        <a class="btn sky" href="#games">🎮 Week 4 games</a>
+      </div>
+      <div class="xpwrap" style="margin:28px 0 0; max-width:420px">
+        <div class="xplabel"><span>🗺️ Program progress</span><span>Week 4 of 5 · final stretch 💪</span></div>
+        <div class="xpbar"><div class="xpfill" style="width:80%"></div></div>
+      </div>
+    </div>
+    <div class="board" aria-hidden="true">
+      <div class="stick s1"><span class="big">🎯</span>Accountability</div>
+      <div class="stick s2"><span class="big">🤝</span>Teamwork</div>
+      <div class="stick s3"><span class="big">👔</span>Professionalism</div>
+      <div class="stick s4"><span class="big">📣</span>Clear comms</div>
+      <div class="stick s5"><span class="big">🏆</span>Lead the crew</div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-in">
+      <span>LEADERSHIP ✦ ACCOUNTABILITY ✦ TEAMWORK ✦ PROFESSIONALISM ✦ OWN IT ✦ GO FIRST ✦ LIFT OTHERS ✦&nbsp;</span>
+      <span>LEADERSHIP ✦ ACCOUNTABILITY ✦ TEAMWORK ✦ PROFESSIONALISM ✦ OWN IT ✦ GO FIRST ✦ LIFT OTHERS ✦&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ THIS WEEK ============ -->
+<section id="schedule">
+  <div class="wrap center">
+    <span class="eyebrow">This week</span>
+    <h2>The Week 4 schedule.</h2>
+    <p class="sub" style="margin:0 auto">Same three-day beat — but this week, <strong>you're</strong> running parts of the show. Each day comes with a mission.</p>
+    <div class="rgrid">
+      <div class="card rcard">
+        <div class="emo">🧠</div>
+        <span class="day">TUE · JULY 14</span>
+        <h3>Level-Up Lab</h3>
+        <p>Leadership, accountability, teamwork, and professionalism — what real leaders actually do (hint: it's not bossing people around).</p>
+        <div class="mission">🎯 Mission: volunteer to lead one drill or discussion today.</div>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🥾</div>
+        <span class="day">WED · JULY 15</span>
+        <h3>Field Day</h3>
+        <p>Team leadership activities and field training. Interns take turns captaining their crews in the neighborhood.</p>
+        <div class="mission">🎯 Mission: captain your team for one full block — huddle, plan, go.</div>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🏅</div>
+        <span class="day">THU · JULY 16</span>
+        <h3>Game Day</h3>
+        <p>Leadership recognition and team development. Time to celebrate the captains who stepped up this week.</p>
+        <div class="mission">🎯 Mission: give one teammate a public shout-out. <a href="#shout">Build yours below ↓</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLAYBOOK ============ -->
+<section id="playbook">
+  <div class="wrap center">
+    <span class="eyebrow">Tuesday's big ideas</span>
+    <h2>The Leader's Playbook.</h2>
+    <p class="sub" style="margin:0 auto">Five moves that separate leaders from people who just have the title. Memorize these — the games below test all five.</p>
+    <div class="pgrid">
+      <div class="card pcard"><span class="pnum">PLAY 1</span><div class="pemo">🎯</div><h3>Own the outcome</h3><p>Leaders never say "not my fault." They say "here's how we fix it." Accountability is the whole job.</p></div>
+      <div class="card pcard"><span class="pnum">PLAY 2</span><div class="pemo">🥇</div><h3>Go first</h3><p>First to volunteer, first door of the day, first to grab the trash after lunch. Teams copy what they see, not what they're told.</p></div>
+      <div class="card pcard"><span class="pnum">PLAY 3</span><div class="pemo">📣</div><h3>Say it clear</h3><p>A confused team is a slow team. Great leaders communicate so nobody has to guess the plan.</p></div>
+      <div class="card pcard"><span class="pnum">PLAY 4</span><div class="pemo">🪜</div><h3>Lift as you climb</h3><p>Your job is making teammates better. Give credit out loud, coach in private, celebrate other people's wins.</p></div>
+      <div class="card pcard"><span class="pnum">PLAY 5</span><div class="pemo">👔</div><h3>Stay pro under pressure</h3><p>Anyone can be professional when it's easy. How you act when it's 98° and doors are slamming — that's your reputation.</p></div>
+    </div>
+  </div>
+</section>
+<!-- ============ WEEK 4 GAME ZONE ============ -->
+<section id="games">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">🕹️ Week 4 Game Zone</span>
+      <h2>Prove you can lead.</h2>
+      <p class="sub" style="margin:0 auto">Three quick games built on this week's playbook. High scores earn bragging rights at Thursday's Game Day.</p>
+    </div>
+
+    <div class="gtabs">
+      <button class="gtab on" data-game="lob" onclick="showGame('lob')">🧭 Leader or Boss?</button>
+      <button class="gtab" data-game="cc" onclick="showGame('cc')">🔥 Crisis Captain</button>
+      <button class="gtab" data-game="pro" onclick="showGame('pro')">⚡ Pro Move or No Move</button>
+    </div>
+
+    <div class="gpanel on" id="g-lob"><div class="gcard" id="lobBox"></div></div>
+    <div class="gpanel" id="g-cc"><div class="gcard" id="ccBox"></div></div>
+    <div class="gpanel" id="g-pro"><div class="gcard" id="proBox"></div></div>
+
+    <p class="gfoot">📸 Screenshot your best titles and bring them Thursday. Captains get receipts.</p>
+  </div>
+</section>
+
+<!-- ============ SHOUT-OUT BUILDER ============ -->
+<section id="shout">
+  <div class="wrap center">
+    <span class="eyebrow">Thursday prep</span>
+    <h2>Shout-Out Builder.</h2>
+    <p class="sub" style="margin:0 auto">Thursday is leadership recognition — and Play 4 says <strong>lift as you climb</strong>. Build a shout-out for a teammate and deliver it out loud at Game Day.</p>
+    <div class="card" style="max-width:640px; margin:34px auto 0">
+      <div class="traitrow">
+        <button class="wtab trait on" data-trait="hustle" onclick="pickTrait(this)">🔥 Hustle</button>
+        <button class="wtab trait" data-trait="cool" onclick="pickTrait(this)">🧊 Cool under pressure</button>
+        <button class="wtab trait" data-trait="team" onclick="pickTrait(this)">🤝 Team-first</button>
+        <button class="wtab trait" data-trait="voice" onclick="pickTrait(this)">🎤 Found their voice</button>
+        <button class="wtab trait" data-trait="improved" onclick="pickTrait(this)">📈 Most improved</button>
+      </div>
+      <input class="soInput" id="soName" type="text" maxlength="30" placeholder="Teammate's first name (optional)">
+      <div style="margin-top:18px"><button class="btn orange" onclick="makeShout()">✨ Build my shout-out</button></div>
+      <div class="bubble" id="soOut" style="display:none; margin-top:20px; border-radius:18px; text-align:left"></div>
+      <div id="soAgain" style="display:none; margin-top:6px">
+        <button class="btn sm sky" onclick="makeShout()">🔁 Remix it</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="flogo">🏠 RoofBuds</div>
+  <p>Week 4: Leadership & Professionalism · July 14–16, 2026</p>
+  <p style="margin-top:8px"><a href="internship.html">← Internship home</a> · <a href="./">RoofBuds main site</a></p>
+  <p style="margin-top:14px; opacity:.6">© 2026 RoofBuds Roofing Solutions · Spring, TX</p>
+</footer>
+<script>
+/* ================= SHARED ================= */
+function shuffle(arr){
+  const a = arr.map((t,idx)=>({t, orig:idx}));
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function showGame(id){
+  document.querySelectorAll(".gtab").forEach(t=>t.classList.toggle("on", t.dataset.game===id));
+  document.querySelectorAll(".gpanel").forEach(p=>p.classList.toggle("on", p.id==="g-"+id));
+}
+
+/* ================= GAME 1: LEADER OR BOSS? ================= */
+const LOB = [
+  {line:"Your team's booking numbers are low with one hour left on Field Day.",
+   o:[{t:"“Last hour, let's each grab ONE more booking — I'll take the toughest street myself.”", best:true},
+      {t:"“Y'all seriously need to work harder.”", best:false},
+      {t:"Say nothing and hope it improves.", best:false}],
+   why:"Play 2: Go first. Leaders rally with a clear target and put themselves on the hardest job."},
+  {line:"A teammate freezes mid-pitch at a door — total blank.",
+   o:[{t:"Step in smoothly, tag-team the pitch, then practice with them afterward.", best:true},
+      {t:"Take over, finish it solo, and vent about it later.", best:false},
+      {t:"Look away and pretend you didn't see it.", best:false}],
+   why:"Play 4: Lift as you climb. Save the moment as a team, coach in private — never embarrass them."},
+  {line:"You mixed up which streets your team was assigned. Half the block got skipped.",
+   o:[{t:"Own it in the huddle: “That's on me — here's the fixed plan for the next hour.”", best:true},
+      {t:"Blame the map. Maps are confusing.", best:false},
+      {t:"Quietly hope nobody notices.", best:false}],
+   why:"Play 1: Own the outcome. Owning a mistake fast actually builds trust — hiding it destroys it."},
+  {line:"Your team just WON the Thursday competition. Everyone's watching you.",
+   o:[{t:"Credit teammates by name: “Maria booked three, Devon never stopped smiling…”", best:true},
+      {t:"“I basically carried this team, not gonna lie.”", best:false},
+      {t:"Shrug. “It was whatever.”", best:false}],
+   why:"Play 4 again: credit goes out loud. Leaders shine the light on the team — and the team runs through walls for them."},
+  {line:"A new intern is sitting alone at lunch, looking totally lost.",
+   o:[{t:"Wave them over and pair up with them for the afternoon block.", best:true},
+      {t:"“They'll figure it out. I did.”", best:false},
+      {t:"Give an awkward nod from across the room.", best:false}],
+   why:"Leadership isn't a title — it's noticing people. The best captains make everyone feel on the team."}
+];
+let lb = {i:0, score:0, locked:false};
+function renderLob(){
+  const box = document.getElementById("lobBox");
+  if(lb.i >= LOB.length){
+    const s = lb.score;
+    const r = s<=1 ? ["😬","Clipboard Holder","You've got the title energy, not the leader energy — yet. Re-read the Playbook and run it back."]
+          : s<=3 ? ["🌱","Rising Leader","Good instincts showing up. Tuesday's session will lock them in."]
+          : s===4 ? ["⭐","Team Captain","Your crew would follow you down any street in Spring."]
+          : ["🏆","Born Leader","Five for five. Guillermo and Chris should be nervous about their jobs."];
+    box.innerHTML = `<div class="result">
+      <div class="remo">${r[0]}</div><div class="rtitle">${r[1]}</div>
+      <p>You made the leader move <strong>${s} / ${LOB.length}</strong> times. ${r[2]}</p>
+      <button class="btn orange" onclick="resetLob()">Play again</button></div>`;
+    return;
+  }
+  const S = LOB[lb.i];
+  const opts = shuffle(S.o);
+  lb.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">🧭 Leader or Boss?</div>
+    <div class="gmeta">Same situation, three reactions. Pick the leader move.</div>
+    <span class="prog">Situation ${lb.i+1} / ${LOB.length} · Leader moves: ${lb.score}</span>
+    <div class="behavior">${S.line}</div>
+    <div id="lOpts">${opts.map(o=>`<button class="opt" data-best="${o.t.best}" onclick="answerLob(this)">${o.t.t}</button>`).join("")}</div>
+    <div id="lWhy"></div>`;
+}
+function answerLob(btn){
+  if(lb.locked) return;
+  lb.locked = true;
+  const right = btn.dataset.best === "true";
+  if(right) lb.score++;
+  document.querySelectorAll("#lOpts .opt").forEach(b=>{
+    b.disabled = true;
+    if(b.dataset.best === "true") b.classList.add("good");
+    else if(b === btn) b.classList.add("bad");
+    else b.classList.add("dim");
+  });
+  document.getElementById("lWhy").innerHTML = `
+    <div class="why">${right ? "✅ Leader move." : "❌ Boss move."} ${LOB[lb.i].why}</div>
+    <button class="btn sm sky" onclick="lb.i++; renderLob()">${lb.i+1 >= LOB.length ? "See my result →" : "Next situation →"}</button>`;
+}
+function resetLob(){ lb = {i:0, score:0, locked:false}; renderLob(); }
+renderLob();
+
+/* ================= GAME 2: CRISIS CAPTAIN ================= */
+const CC = [
+  {title:"8:00 AM · Heat wave", desc:"It's already 98° and your team is dragging before you've knocked a single door. What's your opening move, Captain?",
+   c:[{t:"🗣️ Quick huddle: set a team goal, plan water breaks, hype them up", m:15, b:2, note:"Clear plan + real care = a team that actually wants to work."},
+      {t:"😤 “Push through. No breaks until lunch.”", m:-20, b:2, note:"You got bookings and lost the team by 10 AM. Expensive trade."},
+      {t:"🏳️ “Let's just cut today short.”", m:5, b:0, note:"They liked it for five minutes. Then everyone felt like the day was wasted."}]},
+  {title:"10:30 AM · Teammate down", desc:"One teammate has taken five slammed doors in a row and wants to quit for the day.",
+   c:[{t:"🤝 Pair up with them for the next three doors", m:15, b:2, note:"Play 4: lift as you climb. They booked the third door — with you standing next to them."},
+      {t:"🥊 “Toughen up. Week 2 was literally about this.”", m:-15, b:1, note:"Technically true. Emotionally useless. They shut down for the day."},
+      {t:"🌳 “Just chill in the shade the rest of the day.”", m:5, b:-1, note:"Kind-ish, but you benched them instead of coaching them."}]},
+  {title:"12:30 PM · Halfway huddle", desc:"Numbers check: your team is behind the goal at lunch. Everyone's looking at you.",
+   c:[{t:"🎯 Re-set: “New mini-goal — 3 bookings this next hour. Winner picks the music.”", m:10, b:3, note:"Play 3: say it clear. Small target, tiny prize, instant energy."},
+      {t:"😰 Panic silently and say “we're fine, probably.”", m:-10, b:0, note:"They can smell it when the captain is faking. Confusion spread fast."},
+      {t:"🗺️ “This neighborhood is just bad. Not our fault.”", m:-10, b:0, note:"Blame is the opposite of Play 1. The team learned excuses instead of adjustments."}]},
+  {title:"2:15 PM · Rude homeowner", desc:"A homeowner gets genuinely nasty with one of your teammates at the door.",
+   c:[{t:"🧊 Step in calmly: “No problem, have a great day” — and walk the team off with heads high", m:15, b:0, note:"Play 5: pressure-proof professionalism. Your team just watched a masterclass."},
+      {t:"🔥 Argue back — nobody talks to your team like that", m:-5, b:-2, note:"Loyal? Sure. Professional? No. That homeowner tells five neighbors about RoofBuds now."},
+      {t:"🙈 Act like you didn't hear it", m:-10, b:0, note:"Your teammate felt alone out there. Captains don't let that happen."}]},
+  {title:"4:30 PM · Final push", desc:"Last 30 minutes. The team is fried but you're only two bookings from the goal.",
+   c:[{t:"🥇 “Two more and we're legends — I'll take the first door. Let's go.”", m:10, b:3, note:"Play 2: go first. You knocked, they followed, goal smashed."},
+      {t:"🛑 “Let's call it a day, close enough.”", m:0, b:0, note:"Nobody remembers 'close enough.' The goal died 30 minutes early."},
+      {t:"😒 “If we miss the goal it's because you all slowed down.”", m:-15, b:1, note:"One guilt-trip booking, five teammates who won't run for you tomorrow."}]}
+];
+let cc = {round:0, morale:60, book:0, locked:false};
+function ccMeters(){
+  const m = Math.max(0, Math.min(100, cc.morale));
+  const mColor = m>=70 ? "var(--mint)" : m>=40 ? "var(--sun)" : "var(--red)";
+  return `<div class="meters">
+    <div class="meter"><div class="mlabel">🔥 Team morale</div><div class="mval">${m} / 100</div>
+      <div class="repbar"><div class="repfill" style="width:${m}%; background:${mColor}"></div></div></div>
+    <div class="meter"><div class="mlabel">📈 Bookings</div><div class="mval">${cc.book}</div></div>
+  </div>`;
+}
+function renderCC(){
+  const box = document.getElementById("ccBox");
+  if(cc.round >= CC.length){
+    const m = Math.max(0, Math.min(100, cc.morale));
+    let r;
+    if(m>=90 && cc.book>=9) r = ["🏆","Crisis Captain","Max morale AND max bookings. Your crew would run through a brick wall for you — this is exactly what Wednesday is about."];
+    else if(m>=70) r = ["⭐","Solid Leader","The team ended the day tired, happy, and better than they started. That's the job."];
+    else if(cc.book>=7) r = ["🤖","Results Robot","Big numbers today, burned-out team tomorrow. Leadership is a long game — people quit captains like this."];
+    else r = ["📉","Rookie Captain","Rough day at the helm. Good news: Tuesday's playbook covers every mistake you just made."];
+    box.innerHTML = `
+      <div class="gtitle">🔥 Crisis Captain</div>
+      ${ccMeters()}
+      <div class="result">
+        <div class="remo">${r[0]}</div><div class="rtitle">${r[1]}</div>
+        <p>Final: <strong>${m}/100</strong> morale · <strong>${cc.book}</strong> bookings.<br>${r[2]}</p>
+        <button class="btn orange" onclick="resetCC()">Captain another day</button></div>`;
+    return;
+  }
+  const R = CC[cc.round];
+  cc.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">🔥 Crisis Captain</div>
+    <div class="gmeta">You're captaining Wednesday's Field Day. Five moments will make or break your team.</div>
+    ${ccMeters()}
+    <span class="prog">${R.title}</span>
+    <p style="font-weight:500; margin:12px 0 16px">${R.desc}</p>
+    <div id="cOpts">${R.c.map((c,i)=>`<button class="opt" onclick="chooseCC(${i})">${c.t}</button>`).join("")}</div>
+    <div id="cWhy"></div>`;
+}
+function chooseCC(i){
+  if(cc.locked) return;
+  cc.locked = true;
+  const C = CC[cc.round].c[i];
+  cc.morale = Math.max(0, Math.min(100, cc.morale + C.m));
+  cc.book = Math.max(0, cc.book + C.b);
+  const mTxt = (C.m>=0?"+":"") + C.m + " morale";
+  const bTxt = (C.b>=0?"+":"") + C.b + " bookings";
+  document.querySelectorAll("#cOpts .opt").forEach(b=>{ b.disabled = true; b.classList.add("dim"); });
+  document.getElementById("cWhy").innerHTML = `
+    <div class="why"><strong>${mTxt} · ${bTxt}.</strong> ${C.note}</div>
+    <button class="btn sm sky" onclick="cc.round++; renderCC()">${cc.round+1 >= CC.length ? "See how the day ends →" : "Next moment →"}</button>`;
+  const m = document.querySelector("#ccBox .meters");
+  if(m) m.outerHTML = ccMeters();
+}
+function resetCC(){ cc = {round:0, morale:60, book:0, locked:false}; renderCC(); }
+renderCC();
+
+/* ================= GAME 3: PRO MOVE OR NO MOVE ================= */
+const PRO = [
+  {t:"Showing up 10 minutes early to the huddle", pro:true,  why:"Early is on time. On time is late. Captains set the clock."},
+  {t:"Checking your phone while a homeowner is talking", pro:false, why:"Nothing says 'you don't matter' faster. Phone stays away at the door."},
+  {t:"Saying “I don't know — but I'll find out for you”", pro:true,  why:"Honesty + follow-through beats a made-up answer every single time."},
+  {t:"Trash-talking another roofing company at the door", pro:false, why:"RoofBuds never talks down competitors. Confidence doesn't need to insult anyone."},
+  {t:"Eye contact, a smile, and using the homeowner's name", pro:true,  why:"The Week 1 basics never stop working. First impressions are the whole game."},
+  {t:"Wearing your team shirt wrinkled and half-tucked", pro:false, why:"You're the brand out there. Look like someone they'd trust on their roof."},
+  {t:"Thanking a homeowner even after a hard “no”", pro:true,  why:"Class after a no is rare — and it's why they call US when the next storm hits."},
+  {t:"Complaining loudly about the heat where customers can hear", pro:false, why:"Vent at the huddle, not on the porch. Play 5: pressure-proof professionalism."},
+  {t:"Writing down what your team lead asks you to do", pro:true,  why:"Pros don't trust their memory at 3 PM in July. Notes = nothing dropped."},
+  {t:"Leaving a crooked door hanger and a water bottle on the lawn", pro:false, why:"The crew magnet-sweeps every nail after a job. The standard is spotless — always."}
+];
+let pr = {i:0, score:0, locked:false, order:[]};
+function renderPro(){
+  const box = document.getElementById("proBox");
+  if(pr.i === 0 && pr.order.length === 0) pr.order = shuffle(PRO).map(x=>x.t);
+  if(pr.i >= PRO.length){
+    const s = pr.score;
+    const r = s<=4 ? ["😬","Casual Friday","The standard is higher than that. One more run before Wednesday."]
+          : s<=7 ? ["🙂","Almost Polished","Solid instincts — tighten up the last few and you're there."]
+          : s<=9 ? ["👔","Sharp","Homeowners trust you on sight. That's earned."]
+          : ["🕴️","Certified Professional","Ten for ten. You could write the dress code."];
+    box.innerHTML = `<div class="result">
+      <div class="remo">${r[0]}</div><div class="rtitle">${r[1]}</div>
+      <p>You called <strong>${s} / ${PRO.length}</strong> correctly. ${r[2]}</p>
+      <button class="btn orange" onclick="resetPro()">Run it back</button></div>`;
+    return;
+  }
+  const item = pr.order[pr.i];
+  pr.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">⚡ Pro Move or No Move</div>
+    <div class="gmeta">Rapid fire: is this behavior professional or not? Trust your gut.</div>
+    <span class="prog">${pr.i+1} / ${PRO.length} · Correct: ${pr.score}</span>
+    <div class="behavior">${item.t}</div>
+    <div class="duo" id="pOpts">
+      <button class="opt" data-pick="true" onclick="answerPro(this)">✅ Pro move</button>
+      <button class="opt" data-pick="false" onclick="answerPro(this)">❌ No move</button>
+    </div>
+    <div id="pWhy"></div>`;
+}
+function answerPro(btn){
+  if(pr.locked) return;
+  pr.locked = true;
+  const item = pr.order[pr.i];
+  const right = (btn.dataset.pick === "true") === item.pro;
+  if(right) pr.score++;
+  document.querySelectorAll("#pOpts .opt").forEach(b=>{
+    b.disabled = true;
+    if((b.dataset.pick === "true") === item.pro) b.classList.add("good");
+    else if(b === btn) b.classList.add("bad");
+    else b.classList.add("dim");
+  });
+  document.getElementById("pWhy").innerHTML = `
+    <div class="why">${right ? "✅ Correct!" : "❌ Nope."} ${item.why}</div>
+    <button class="btn sm sky" onclick="pr.i++; renderPro()">${pr.i+1 >= PRO.length ? "See my result →" : "Next →"}</button>`;
+}
+function resetPro(){ pr = {i:0, score:0, locked:false, order:[]}; renderPro(); }
+renderPro();
+
+/* ================= SHOUT-OUT BUILDER ================= */
+const SHOUTS = {
+  hustle:[
+    "🔥 Shout-out to {N} — first through the gate every morning, last one to stop knocking. That's RoofBuds hustle.",
+    "🔥 {N} doesn't wait for motivation. {N} IS the motivation. Respect.",
+    "🔥 Heat, hills, slammed doors — {N} outworked all of it this week. Certified motor."],
+  cool:[
+    "🧊 {N} takes a slammed door like it's a light breeze. Ice in the veins, smile on the face.",
+    "🧊 Watched {N} handle the rudest homeowner in Spring and stay 100% classy. That's Play 5 in real life.",
+    "🧊 Pressure makes most people crack. It just makes {N} calmer. Unreal."],
+  team:[
+    "🤝 {N} makes everybody around them better. Doors, drills, lunch cleanup — always team-first.",
+    "🤝 When somebody's struggling, {N} shows up next to them without being asked. That's captain DNA.",
+    "🤝 {N} passes credit like it's a hot potato and takes blame like a champ. Real leader behavior."],
+  voice:[
+    "🎤 {N} went from quiet in Week 1 to owning the porch in Week 4. Volume: FOUND.",
+    "🎤 {N}'s pitch this week gave everybody chills. Confidence looks good on you.",
+    "🎤 Public speaking used to scare {N}. Now homeowners are asking {N} questions. Full glow-up."],
+  improved:[
+    "📈 Nobody — and I mean NOBODY — leveled up harder than {N} this program. Watch this space.",
+    "📈 Week 1 {N} wouldn't recognize Week 4 {N}. That's what showing up coachable does.",
+    "📈 {N} turned every piece of feedback into fuel. Most improved isn't even close."]
+};
+let soTrait = "hustle";
+let soLast = -1;
+function pickTrait(btn){
+  soTrait = btn.dataset.trait;
+  soLast = -1;
+  document.querySelectorAll(".trait").forEach(t=>t.classList.toggle("on", t===btn));
+}
+function makeShout(){
+  const name = (document.getElementById("soName").value.trim() || "my teammate");
+  const list = SHOUTS[soTrait];
+  let i;
+  do { i = Math.floor(Math.random()*list.length); } while(list.length > 1 && i === soLast);
+  soLast = i;
+  const msg = list[i].split("{N}").join(name);
+  const out = document.getElementById("soOut");
+  out.style.display = "block";
+  out.innerHTML = "<strong>" + msg + "</strong>";
+  document.getElementById("soAgain").style.display = "block";
+}
+</script>
+</body>
+</html>
