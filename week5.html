@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3AB5FF">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Week 5 of the RoofBuds Internship — Career & Graduation. July 21–23, 2026. Final schedule, the Graduation Gauntlet capstone quiz, and your diploma.">
+<title>Week 5: Career & Graduation — RoofBuds Internship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0D1B2E; --ink:#0A1523; --sky:#3AB5FF; --sun:#FFC53D;
+  --orange:#FF6B2C; --paper:#F2F8FF; --skylight:#C7E6FF; --mint:#2BC48A; --red:#FF5A5A; --white:#fff;
+  color-scheme:light;
+}
+*{box-sizing:border-box; margin:0; padding:0}
+html{scroll-behavior:smooth; background:#C7E6FF}
+body{font-family:'Space Grotesk',system-ui,sans-serif; background:#C7E6FF !important; color:var(--navy); line-height:1.55; -webkit-font-smoothing:antialiased}
+::selection{background:var(--sun); color:var(--navy)}
+img,svg{display:block; max-width:100%}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:'Archivo Black',sans-serif; line-height:1.08; letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,7vw,4.4rem)}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem); margin-bottom:14px}
+h3{font-size:1.15rem}
+.wrap{max-width:1100px; margin:0 auto; padding:0 20px}
+section{padding:76px 0}
+.center{text-align:center}
+.sub{font-size:1.1rem; max-width:640px; opacity:.95}
+.eyebrow{display:inline-block; background:var(--sun); border:3px solid var(--navy); border-radius:999px; padding:7px 16px; font-weight:700; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; box-shadow:3px 3px 0 var(--navy); margin-bottom:18px}
+:focus-visible{outline:3px solid var(--orange); outline-offset:3px; border-radius:6px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; border:3px solid var(--navy); border-radius:14px; padding:14px 24px; background:var(--sun); color:var(--navy); text-decoration:none; box-shadow:5px 5px 0 var(--navy); cursor:pointer; transition:transform .12s ease, box-shadow .12s ease}
+.btn:hover{transform:translate(2px,2px); box-shadow:3px 3px 0 var(--navy)}
+.btn:active{transform:translate(5px,5px); box-shadow:0 0 0 var(--navy)}
+.btn.orange{background:var(--orange); color:#fff}
+.btn.sky{background:var(--sky)}
+.btn.ghost{background:#fff}
+.btn.sm{padding:10px 16px; font-size:.92rem; border-radius:11px}
+.btn:disabled{opacity:.45; cursor:not-allowed; transform:none}
+
+/* ---------- cards & stickers ---------- */
+.card{background:#fff; border:3px solid var(--navy); border-radius:18px; box-shadow:7px 7px 0 rgba(13,27,46,.9); padding:24px}
+.chip{display:inline-block; background:#fff; border:2.5px solid var(--navy); border-radius:999px; padding:5px 13px; font-weight:700; font-size:.85rem; box-shadow:2px 2px 0 var(--navy); margin:4px 4px 0 0}
+
+/* ---------- nav ---------- */
+nav{position:sticky; top:0; z-index:50; background:var(--navy); color:#fff; border-bottom:3px solid var(--ink)}
+.navin{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 20px; max-width:1100px; margin:0 auto}
+.logo{font-family:'Archivo Black',sans-serif; font-size:1.15rem; text-decoration:none; display:flex; align-items:center; gap:8px}
+.logo .tag{font-family:'Space Grotesk',sans-serif; font-size:.65rem; background:var(--orange); color:#fff; border:2px solid var(--navy); border-radius:6px; padding:2px 7px; letter-spacing:.08em}
+.navlinks{display:flex; gap:20px; font-weight:700; font-size:.95rem}
+.navlinks a{text-decoration:none; opacity:.85}
+.navlinks a:hover{opacity:1; color:var(--orange)}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 0; overflow:hidden; background:var(--sky)}
+.herogrid{display:grid; grid-template-columns:1.15fr .85fr; gap:36px; align-items:center}
+.hero h1{color:#fff; text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero h1 .hl{color:var(--orange); text-shadow:4px 4px 0 rgba(13,27,46,.28)}
+.hero .sub{margin:18px 0 26px}
+.ctarow{display:flex; gap:14px; flex-wrap:wrap}
+.datechips{margin-top:26px}
+.board{position:relative; min-height:360px}
+.stick{position:absolute; background:#fff; border:3px solid var(--navy); border-radius:16px; padding:14px 18px; font-weight:700; box-shadow:6px 6px 0 var(--navy); text-align:center; animation:float 5s ease-in-out infinite}
+.stick .big{font-size:2.1rem; display:block; margin-bottom:2px}
+.s1{top:4%; left:6%; transform:rotate(-7deg); background:var(--sun)}
+.s2{top:2%; right:2%; transform:rotate(5deg)}
+.s3{top:42%; left:0%; transform:rotate(4deg); background:var(--sun); animation-delay:.8s}
+.s4{top:44%; right:8%; transform:rotate(-4deg); animation-delay:1.4s}
+.s5{bottom:0%; left:28%; transform:rotate(-2deg); background:var(--orange); color:#fff; animation-delay:2s}
+@keyframes float{0%,100%{margin-top:0}50%{margin-top:-9px}}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--navy); color:var(--sun); border-top:3px solid var(--navy); border-bottom:3px solid var(--navy); overflow:hidden; padding:12px 0; margin-top:60px}
+.ticker-in{display:flex; gap:0; white-space:nowrap; font-family:'Archivo Black',sans-serif; font-size:1rem; animation:slide 26s linear infinite}
+.ticker-in span{padding-right:34px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- weekly rhythm ---------- */
+.rgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:34px}
+.rcard .day{display:inline-block; background:var(--navy); color:var(--sun); border-radius:8px; padding:4px 12px; font-family:'Archivo Black',sans-serif; font-size:.8rem; letter-spacing:.05em; margin-bottom:12px}
+.rcard .emo{font-size:2rem; margin-bottom:8px}
+
+/* ---------- journey ---------- */
+.xpwrap{max-width:520px; margin:26px auto 30px}
+.xplabel{display:flex; justify-content:space-between; font-weight:700; font-size:.9rem; margin-bottom:6px}
+.xpbar{height:20px; background:#fff; border:3px solid var(--navy); border-radius:999px; overflow:hidden}
+.xpfill{height:100%; width:0%; background:repeating-linear-gradient(45deg,var(--mint),var(--mint) 12px,#25a877 12px,#25a877 24px); transition:width .4s ease}
+.wtabs{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:26px}
+.wtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:.95rem; background:#fff; border:3px solid var(--navy); border-radius:12px; padding:10px 16px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.wtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.wtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.wpanel{display:grid; grid-template-columns:.9fr 1.1fr; gap:26px; align-items:start}
+.wpanel .hero-emo{font-size:4rem; line-height:1}
+.wpanel .tagline{font-size:1.05rem; font-weight:500; opacity:.85; margin-top:8px}
+.dayrow{display:flex; gap:14px; align-items:flex-start; padding:13px 0; border-bottom:2px dashed rgba(13,27,46,.25)}
+.dayrow:last-child{border-bottom:none}
+.dayrow .d{flex:0 0 52px; background:var(--sky); border:2.5px solid var(--navy); border-radius:9px; text-align:center; font-family:'Archivo Black',sans-serif; font-size:.78rem; padding:5px 0}
+
+/* ---------- skills ---------- */
+.skillgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:16px; margin-top:34px}
+.skill{background:#fff; border:3px solid var(--navy); border-radius:16px; box-shadow:5px 5px 0 var(--navy); padding:18px 12px; text-align:center; font-weight:700; transition:transform .12s}
+.skill:hover{transform:rotate(-2deg) scale(1.03)}
+.skill .emo{font-size:2rem; display:block; margin-bottom:6px}
+
+/* ---------- team code ---------- */
+.codelist{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:30px}
+.codeitem{display:flex; align-items:center; gap:14px; background:#fff; border:3px solid var(--navy); border-radius:14px; padding:15px 18px; font-weight:700; cursor:pointer; box-shadow:4px 4px 0 var(--navy)}
+.codeitem input{width:22px; height:22px; accent-color:var(--orange); cursor:pointer; flex-shrink:0}
+#codeDone{display:none; margin:26px auto 0; max-width:560px; background:var(--navy); color:var(--sun); text-align:center; font-family:'Archivo Black',sans-serif; font-size:1.2rem; border-radius:16px; padding:20px; border:3px solid var(--navy); box-shadow:6px 6px 0 rgba(13,27,46,.4)}
+
+/* ---------- level path ---------- */
+.path{display:flex; gap:14px; align-items:stretch; margin-top:36px; flex-wrap:wrap}
+.step{flex:1; min-width:190px; position:relative}
+.step .lv{position:absolute; top:-14px; left:16px; background:var(--orange); color:#fff; border:2.5px solid var(--navy); border-radius:8px; font-family:'Archivo Black',sans-serif; font-size:.75rem; padding:3px 9px}
+.step .emo{font-size:1.9rem; margin-bottom:6px}
+.step p{font-size:.92rem; opacity:.85; font-weight:500}
+
+
+/* ---------- game zone ---------- */
+#games .eyebrow{background:var(--orange); color:#fff}
+.gtabs{display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin:34px 0 30px}
+.gtab{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:14px; padding:13px 20px; cursor:pointer; box-shadow:4px 4px 0 var(--navy); transition:transform .1s}
+.gtab:hover{transform:translate(1px,1px); box-shadow:3px 3px 0 var(--navy)}
+.gtab.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+.gpanel{display:none; max-width:760px; margin:0 auto}
+.gpanel.on{display:block}
+.gcard{background:#fff; color:var(--navy); border:3px solid var(--navy); border-radius:20px; box-shadow:8px 8px 0 rgba(13,27,46,.9); padding:28px}
+.gtitle{font-family:'Archivo Black',sans-serif; font-size:1.3rem; margin-bottom:4px}
+.gmeta{font-size:.9rem; opacity:.75; margin-bottom:18px; font-weight:500}
+.opt{display:block; width:100%; text-align:left; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1rem; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:14px 16px; margin-bottom:12px; cursor:pointer; transition:transform .1s; box-shadow:3px 3px 0 var(--navy)}
+.opt:hover{transform:translate(1px,1px); box-shadow:2px 2px 0 var(--navy)}
+.opt.good{background:var(--mint); color:#fff; border-color:#0d7a52}
+.opt.bad{background:var(--red); color:#fff; border-color:#a12626}
+.opt.dim{opacity:.45}
+.opt:disabled{cursor:default; transform:none}
+.why{background:var(--paper); border:2.5px dashed var(--navy); border-radius:12px; padding:14px 16px; font-weight:500; margin:6px 0 16px}
+.prog{font-family:'Archivo Black',sans-serif; font-size:.85rem; background:var(--sky); display:inline-block; border:2.5px solid var(--navy); border-radius:8px; padding:4px 12px; margin-bottom:16px}
+.bubble{background:var(--paper); border:3px solid var(--navy); border-radius:18px 18px 18px 4px; padding:16px 18px; font-size:1.1rem; font-weight:700; margin-bottom:18px; position:relative}
+.bubble::before{content:"🚪🗣️"; display:block; font-size:1.3rem; margin-bottom:6px}
+.meters{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:20px}
+.meter{flex:1; min-width:200px; background:var(--paper); border:3px solid var(--navy); border-radius:12px; padding:12px 14px}
+.meter .mlabel{font-size:.8rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; opacity:.7}
+.meter .mval{font-family:'Archivo Black',sans-serif; font-size:1.4rem}
+.repbar{height:12px; background:#fff; border:2px solid var(--navy); border-radius:99px; overflow:hidden; margin-top:6px}
+.repfill{height:100%; background:var(--mint); width:50%; transition:width .35s, background .35s}
+.bignum{font-family:'Archivo Black',sans-serif; font-size:4rem; text-align:center; margin:10px 0}
+.timerbar{height:16px; background:var(--paper); border:3px solid var(--navy); border-radius:99px; overflow:hidden; margin:8px 0 18px}
+.timerfill{height:100%; width:100%; background:var(--orange); transition:width 1s linear}
+.result{text-align:center; padding:10px 0}
+.result .remo{font-size:3.4rem}
+.result .rtitle{font-family:'Archivo Black',sans-serif; font-size:1.5rem; margin:8px 0 4px}
+.result p{font-weight:500; opacity:.85; max-width:480px; margin:0 auto 18px}
+.gfoot{text-align:center; margin-top:26px; font-size:.9rem; opacity:.85}
+
+/* ---------- parents ---------- */
+#parents .card{max-width:780px; margin:30px auto 0}
+#parents .founders{display:flex; gap:14px; align-items:center; margin-top:20px; padding-top:20px; border-top:2px dashed rgba(13,27,46,.25); font-weight:700}
+#parents .founders .emo{font-size:2rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink); color:#cfe3ff; padding:44px 20px; text-align:center; font-size:.95rem}
+footer a{color:var(--sun); font-weight:700}
+footer .flogo{font-family:'Archivo Black',sans-serif; color:#fff; font-size:1.2rem; margin-bottom:10px}
+
+/* ---------- responsive ---------- */
+@media (max-width:860px){
+  .herogrid{grid-template-columns:1fr}
+  .board{min-height:320px; margin-top:10px}
+  .wpanel{grid-template-columns:1fr}
+  .rgrid{grid-template-columns:1fr}
+  .codelist{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .navlinks{display:none}
+  section{padding:56px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  .ticker-in{animation:none}
+  .stick{animation:none}
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+
+/* ---------- week 4 additions ---------- */
+.mission{margin-top:14px; background:var(--sun); border:2.5px solid var(--navy); border-radius:12px; padding:10px 14px; font-weight:700; font-size:.92rem; box-shadow:3px 3px 0 var(--navy)}
+.pgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:18px; margin-top:34px; text-align:left}
+.pcard .pemo{font-size:2rem; margin-bottom:8px}
+.pcard p{font-size:.95rem; opacity:.85; font-weight:500; margin-top:6px}
+.pcard .pnum{position:absolute; top:-14px; right:16px; background:var(--sky); border:2.5px solid var(--navy); border-radius:8px; font-family:'Archivo Black',sans-serif; font-size:.75rem; padding:3px 9px}
+.pcard{position:relative}
+.duo{display:flex; gap:14px; margin-top:6px}
+.duo .opt{width:auto; flex:1; text-align:center; font-size:1.15rem}
+.behavior{background:var(--paper); border:3px solid var(--navy); border-radius:16px; padding:22px 18px; font-weight:700; font-size:1.15rem; text-align:center; margin-bottom:16px}
+.soInput{font-family:inherit; font-weight:700; font-size:1rem; color:var(--navy); background:#fff; border:3px solid var(--navy); border-radius:12px; padding:12px 16px; width:100%; max-width:340px; box-shadow:3px 3px 0 var(--navy)}
+.soInput:focus{outline:3px solid var(--orange); outline-offset:2px}
+.traitrow{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin:18px 0 8px}
+.wtab.trait.on{background:var(--sun); transform:translate(2px,2px); box-shadow:2px 2px 0 var(--navy)}
+
+/* ---------- week 5 additions ---------- */
+.cert{background:#fff; border:4px solid var(--navy); border-radius:20px; padding:30px 24px; text-align:center; box-shadow:9px 9px 0 rgba(13,27,46,.9); max-width:560px; margin:0 auto}
+.cert .seal{font-size:3.2rem; line-height:1}
+.cert .certtop{font-family:'Archivo Black',sans-serif; font-size:.8rem; letter-spacing:.14em; color:var(--orange); margin:10px 0 2px}
+.cert h3{font-family:'Archivo Black',sans-serif; font-size:1.35rem; margin-bottom:4px}
+.certname{font-family:'Archivo Black',sans-serif; font-size:2rem; color:var(--orange); text-transform:uppercase; margin:10px 0 4px; line-height:1.1}
+.certline{border-top:2px dashed rgba(13,27,46,.3); margin:16px auto; width:70%}
+.cert .certfoot{font-size:.85rem; font-weight:700; opacity:.75}
+.torchcard{background:var(--navy); color:#fff; border:3px solid var(--navy); border-radius:20px; padding:26px; box-shadow:8px 8px 0 rgba(13,27,46,.35); max-width:560px; margin:0 auto; text-align:center}
+.torchcard .tq{font-family:'Archivo Black',sans-serif; font-size:1.25rem; color:var(--sun); line-height:1.35}
+.torchcard .tby{margin-top:12px; font-weight:700; color:#9BD0FA}
+.soTextarea{font-family:inherit; font-weight:600; font-size:1rem; color:var(--navy); background:#fff; border:3px solid var(--navy); border-radius:12px; padding:12px 16px; width:100%; box-shadow:3px 3px 0 var(--navy); resize:vertical; min-height:84px}
+.soTextarea:focus{outline:3px solid var(--orange); outline-offset:2px}
+</style>
+</head>
+<body id="top">
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="navin">
+    <a class="logo" href="#top">🏠 RoofBuds <span class="tag">WEEK 5</span></a>
+    <div class="navlinks">
+      <a href="#schedule">Final Week</a>
+      <a href="#gauntlet">The Gauntlet</a>
+      <a href="#torch">Pass the Torch</a>
+      <a href="#sendoff">Send-Off</a>
+    </div>
+    <a class="btn sm orange" href="internship.html">Program home</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <span class="eyebrow">🎓 July 21–23 · FINAL WEEK</span>
+      <h1>Launch<br>what's <span class="hl">next.</span></h1>
+      <p class="sub">Week 5 is Career & Graduation. Five weeks ago you were nervous to knock a door. Now you can pitch, lead, and bounce back from anything. Time to cross the stage — and prove it one last time.</p>
+      <div class="ctarow">
+        <a class="btn orange" href="#gauntlet">🏁 Take the Graduation Gauntlet</a>
+        <a class="btn sky" href="#schedule">Final schedule</a>
+      </div>
+      <div class="xpwrap" style="margin:28px 0 0; max-width:420px">
+        <div class="xplabel"><span>🗺️ Program progress</span><span>Week 5 of 5 · 100% 🎉</span></div>
+        <div class="xpbar"><div class="xpfill" style="width:100%"></div></div>
+      </div>
+    </div>
+    <div class="board" aria-hidden="true">
+      <div class="stick s1"><span class="big">🎓</span>Graduation</div>
+      <div class="stick s2"><span class="big">💼</span>Career ready</div>
+      <div class="stick s3"><span class="big">🤝</span>Networking</div>
+      <div class="stick s4"><span class="big">🎤</span>Interviews</div>
+      <div class="stick s5"><span class="big">🏆</span>Awards day</div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-in">
+      <span>CAREER ✦ NETWORKING ✦ INTERVIEWS ✦ GRADUATION ✦ CERTIFICATES ✦ AWARDS ✦ FAMILY ✦ WHAT'S NEXT ✦&nbsp;</span>
+      <span>CAREER ✦ NETWORKING ✦ INTERVIEWS ✦ GRADUATION ✦ CERTIFICATES ✦ AWARDS ✦ FAMILY ✦ WHAT'S NEXT ✦&nbsp;</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FINAL WEEK ============ -->
+<section id="schedule">
+  <div class="wrap center">
+    <span class="eyebrow">The final week</span>
+    <h2>Three days left. Empty the tank.</h2>
+    <div class="rgrid">
+      <div class="card rcard">
+        <div class="emo">💼</div>
+        <span class="day">TUE · JULY 21</span>
+        <h3>Level-Up Lab</h3>
+        <p>Career planning, networking, interviews, and future opportunities — turning five weeks of skills into what comes next.</p>
+        <div class="mission">🎯 Mission: ask one working pro for one piece of career advice.</div>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🥾</div>
+        <span class="day">WED · JULY 22</span>
+        <h3>Final Field Day</h3>
+        <p>The last outreach day of the summer. Every skill from every week, all at once, one more time.</p>
+        <div class="mission">🎯 Mission: make your last block your best block.</div>
+      </div>
+      <div class="card rcard">
+        <div class="emo">🎓</div>
+        <span class="day">THU · JULY 23</span>
+        <h3>GRADUATION</h3>
+        <p>Ceremony, certificates, awards — and a family celebration. Your people get to see what you built this summer.</p>
+        <div class="mission">🎯 Mission: celebrate loud. You earned it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GRADUATION GAUNTLET ============ -->
+<section id="gauntlet">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">🏁 The capstone</span>
+      <h2>The Graduation Gauntlet.</h2>
+      <p class="sub" style="margin:0 auto">15 questions. All five weeks. Score <strong>12 or better</strong> and you can print your official (unofficial) RoofBuds diploma. Screenshot it for the ceremony.</p>
+    </div>
+    <div class="gpanel on" style="margin-top:30px">
+      <div class="gcard" id="ggBox"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PASS THE TORCH ============ -->
+<section id="torch">
+  <div class="wrap center">
+    <span class="eyebrow">Legacy move</span>
+    <h2>Pass the torch.</h2>
+    <p class="sub" style="margin:0 auto">Next summer, a nervous freshman will stand exactly where you stood in Week 1. Leave them one line — the thing you wish someone had told you.</p>
+    <div class="card" style="max-width:640px; margin:34px auto 0">
+      <textarea class="soTextarea" id="torchText" maxlength="140" placeholder="Your one line of advice for the Class of 2027… (140 characters)"></textarea>
+      <input class="soInput" id="torchName" type="text" maxlength="30" placeholder="Your first name (optional)" style="margin-top:14px">
+      <div style="margin-top:18px"><button class="btn orange" onclick="makeTorch()">🔥 Light it up</button></div>
+      <div id="torchOut" style="display:none; margin-top:22px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEND-OFF ============ -->
+<section id="sendoff">
+  <div class="wrap center">
+    <span class="eyebrow">Not goodbye</span>
+    <h2>This doesn't have to end today.</h2>
+    <p class="sub" style="margin:0 auto">Interns who showed up, stayed coachable, and led their crews have a real path at RoofBuds. The ladder is open.</p>
+    <div class="path">
+      <div class="card step"><span class="lv">DONE ✓</span><div class="emo">🎓</div><h3>Intern, Class of '26</h3><p>Five weeks. Ten skills. Zero quit.</p></div>
+      <div class="card step"><span class="lv">LV. 2</span><div class="emo">⭐</div><h3>Team Leader</h3><p>Run your own crew next season.</p></div>
+      <div class="card step"><span class="lv">LV. 3</span><div class="emo">📋</div><h3>Project Coordinator</h3><p>Keep real roofing projects moving.</p></div>
+      <div class="card step"><span class="lv">LV. 4</span><div class="emo">👑</div><h3>Project Manager</h3><p>Own projects start to finish.</p></div>
+    </div>
+    <div class="card" style="max-width:700px; margin:40px auto 0; text-align:left">
+      <h3 style="margin-bottom:8px">To the families 👋</h3>
+      <p>Thank you for the rides, the early mornings, and for trusting us with your student this summer. Everything they show you today — the handshake, the eye contact, the confidence — they earned it door by door. — <strong>Guillermo, Chris & the RoofBuds crew</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="flogo">🏠 RoofBuds</div>
+  <p>Week 5: Career & Graduation · Class of 2026 🎓</p>
+  <p style="margin-top:8px"><a href="internship.html">← Internship home</a> · <a href="week4.html">Week 4</a> · <a href="./">RoofBuds main site</a></p>
+  <p style="margin-top:14px; opacity:.6">© 2026 RoofBuds Roofing Solutions · Spring, TX</p>
+</footer>
+<script>
+function shuffle(arr){
+  const a = arr.map((t,idx)=>({t, orig:idx}));
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function esc(t){ return t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+/* ================= THE GRADUATION GAUNTLET ================= */
+const GG = [
+  {w:1, q:"First impressions form in about…", o:["7 seconds","7 minutes","One conversation"], a:0,
+   why:"Week 1, day one: posture, smile, and a clear intro do the work before you finish a sentence."},
+  {w:1, q:"The three basics of a strong intro at the door:", o:["Eye contact, a smile, their name","Sunglasses, mumbling, a quick exit","Talking fast so they can't say no"], a:0,
+   why:"The Week 1 basics never stopped working — they carried every week after."},
+  {w:1, q:"The real cure for public-speaking nerves:", o:["Reps — you do it until it's normal","Avoiding it forever","Memorizing every word and praying"], a:0,
+   why:"Confidence was never a personality trait. It's a muscle you spent five weeks lifting."},
+  {w:2, q:"A homeowner says “I'm not interested.” Best first move:", o:["Stay friendly, ask one easy question","Argue your case","Apologize and sprint away"], a:0,
+   why:"Most 'not interested' just means 'I don't know you yet.' Week 2 taught you the difference."},
+  {w:2, q:"Right after a hard “no,” a pro…", o:["Resets and takes the next door","Takes it personally","Calls it a day"], a:0,
+   why:"Resilience means the reset takes seconds, not the rest of the afternoon."},
+  {w:2, q:"Rejection is really just…", o:["Data plus practice","Proof you're bad at this","A sign to stop"], a:0,
+   why:"Every no told you something and toughened you up. That was the whole point of Week 2."},
+  {w:3, q:"Profit equals…", o:["Revenue minus expenses","Revenue plus expenses","Whatever's in your pocket"], a:0,
+   why:"Money in minus money out — if you don't track expenses, you don't know if you're winning."},
+  {w:3, q:"In sales, a “lead” is…", o:["A potential customer","A finished job","The team captain"], a:0,
+   why:"Every business you'll ever run or work for lives on finding and following up with leads."},
+  {w:3, q:"You knock 50 doors and book 5 inspections. Booking rate:", o:["10%","5%","25%"], a:0,
+   why:"5 ÷ 50 = 10%. Pros track their numbers because numbers tell you what to fix."},
+  {w:4, q:"Your team just won. A leader says:", o:["“Look what THEY did.”","“I basically carried us.”","“It was whatever.”"], a:0,
+   why:"Play 4: lift as you climb. Credit goes out loud — and the team runs through walls for you."},
+  {w:4, q:"You made the mistake. Play 1 says:", o:["Own it and bring the fix","Blame the map","Hope nobody notices"], a:0,
+   why:"Own the outcome. Owning it fast builds trust; hiding it destroys trust."},
+  {w:4, q:"A pro move right after a “no” at the door:", o:["Thank them anyway","Complain where they can hear you","Slam the gate on the way out"], a:0,
+   why:"Class after a no is rare — and it's why they call US when the next storm hits."},
+  {w:5, q:"Before a job interview, you should…", o:["Research the company and show up early","Wing it — confidence is enough","Arrive exactly on time, phone in hand"], a:0,
+   why:"Week 5: preparation IS confidence. Early is on time, on time is late."},
+  {w:5, q:"Networking mostly means…", o:["Being curious about people, then following up","Collecting followers","Only talking to important people"], a:0,
+   why:"Ask real questions, remember what they said, follow up. That's the entire secret."},
+  {w:5, q:"After this summer, the RoofBuds ladder can lead to…", o:["Team Leader → Project Coordinator → Project Manager","Nothing — it's over","Only ever roofing"], a:0,
+   why:"The ladder is real and it's open. Standout interns keep climbing."}
+];
+const WKCOLOR = {1:"var(--sky)",2:"var(--red)",3:"var(--mint)",4:"var(--orange)",5:"var(--sun)"};
+let gg = {i:0, score:0, locked:false};
+function renderGG(){
+  const box = document.getElementById("ggBox");
+  if(gg.i >= GG.length){
+    const s = gg.score, passed = s >= 12;
+    const r = s === 15 ? ["👑","Valedictorian","A perfect run. Give the speech yourself."]
+          : passed ? ["🎓","Certified RoofBud","You cleared the bar. Claim the diploma."]
+          : s >= 8 ? ["🔨","Almost Certified","So close. One more run — you know this stuff."]
+          : ["😅","Summer School","Rough run — shake it off and go again. Week 2 taught you how."];
+    box.innerHTML = `<div class="result">
+      <div class="remo">${r[0]}</div><div class="rtitle">${r[1]}</div>
+      <p>You scored <strong>${s} / 15</strong> across all five weeks. ${r[2]}</p>
+      ${passed ? `
+        <input class="soInput" id="ggName" type="text" maxlength="30" placeholder="Your name for the diploma">
+        <div style="margin-top:14px"><button class="btn orange" onclick="makeCert(${s})">🎓 Print my diploma</button></div>
+        <div id="certZone" style="margin-top:24px"></div>` :
+        `<button class="btn orange" onclick="resetGG()">Run it back</button>`}
+    </div>`;
+    return;
+  }
+  const Q = GG[gg.i];
+  const opts = shuffle(Q.o);
+  gg.locked = false;
+  box.innerHTML = `
+    <div class="gtitle">🏁 The Graduation Gauntlet</div>
+    <div class="gmeta">15 questions · every week · 12+ earns the diploma</div>
+    <span class="prog">Q ${gg.i+1} / 15 · Score ${gg.score}</span>
+    <span class="prog" style="background:${WKCOLOR[Q.w]}; margin-left:8px">WEEK ${Q.w}</span>
+    <h3 style="margin:14px 0 16px; font-family:'Space Grotesk'; font-weight:700; font-size:1.15rem">${Q.q}</h3>
+    <div id="ggOpts">${opts.map(o=>`<button class="opt" data-orig="${o.orig}" onclick="answerGG(this)">${o.t}</button>`).join("")}</div>
+    <div id="ggWhy"></div>`;
+}
+function answerGG(btn){
+  if(gg.locked) return;
+  gg.locked = true;
+  const Q = GG[gg.i];
+  const right = +btn.dataset.orig === Q.a;
+  if(right) gg.score++;
+  document.querySelectorAll("#ggOpts .opt").forEach(b=>{
+    b.disabled = true;
+    if(+b.dataset.orig === Q.a) b.classList.add("good");
+    else if(b === btn) b.classList.add("bad");
+    else b.classList.add("dim");
+  });
+  document.getElementById("ggWhy").innerHTML = `
+    <div class="why">${right ? "✅ Locked in." : "❌ Not that one."} ${Q.why}</div>
+    <button class="btn sm sky" onclick="gg.i++; renderGG()">${gg.i+1 >= GG.length ? "See my final score →" : "Next →"}</button>`;
+}
+function resetGG(){ gg = {i:0, score:0, locked:false}; renderGG(); }
+function makeCert(score){
+  const name = esc((document.getElementById("ggName").value.trim() || "A Certified RoofBud"));
+  document.getElementById("certZone").innerHTML = `
+    <div class="cert">
+      <div class="seal">🎓</div>
+      <div class="certtop">ROOFBUDS INTERNSHIP · CLASS OF 2026</div>
+      <h3>This certifies that</h3>
+      <div class="certname">${name}</div>
+      <p style="font-weight:600">completed the 5-Week Leadership & Sales Internship</p>
+      <p style="font-size:.9rem; opacity:.8; margin-top:6px">Confidence · Resilience · Money · Leadership · Career</p>
+      <div class="certline"></div>
+      <p style="font-weight:700">Gauntlet score: ${score} / 15</p>
+      <p class="certfoot" style="margin-top:10px">July 23, 2026 · Spring, TX<br>Guillermo Ortiz & Chris — Founders, RoofBuds</p>
+    </div>
+    <p style="text-align:center; font-weight:700; margin-top:16px">📸 Screenshot it. Show it at the ceremony.</p>`;
+}
+renderGG();
+
+/* ================= PASS THE TORCH ================= */
+function makeTorch(){
+  const t = document.getElementById("torchText").value.trim();
+  if(!t){ document.getElementById("torchText").focus(); return; }
+  const name = document.getElementById("torchName").value.trim();
+  const by = name ? esc(name) + " · Class of '26" : "Class of '26";
+  const out = document.getElementById("torchOut");
+  out.style.display = "block";
+  out.innerHTML = `
+    <div class="torchcard">
+      <div style="font-size:1.6rem">🔥</div>
+      <div style="font-family:'Archivo Black'; font-size:.78rem; letter-spacing:.14em; color:#9BD0FA; margin:8px 0 12px">ADVICE TO THE CLASS OF 2027</div>
+      <div class="tq">“${esc(t)}”</div>
+      <div class="tby">— ${by}</div>
+    </div>
+    <p style="font-weight:700; margin-top:16px">📸 Screenshot it and send it to Guillermo — next year's Week 1 slide deck is being built from these.</p>`;
+}
+</script>
+</body>
+</html>
